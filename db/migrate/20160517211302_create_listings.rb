@@ -8,6 +8,7 @@ class CreateListings < ActiveRecord::Migration
       t.text :description
       t.integer :accommodates
       t.boolean :availability
+      t.references :user, index: true, foreign_key: true
 
       t.timestamps null: false
     end
