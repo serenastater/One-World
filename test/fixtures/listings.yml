@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  headline: MyString
+  street_address: MyString
+  city: MyString
+  country: MyString
+  description: MyText
+  accommodates: 1
+  availability: false
+
+two:
+  headline: MyString
+  street_address: MyString
+  city: MyString
+  country: MyString
+  description: MyText
+  accommodates: 1
+  availability: false

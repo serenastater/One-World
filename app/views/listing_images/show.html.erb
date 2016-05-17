@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Caption:</strong>
+  <%= @listing_image.caption %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= @listing_image.picture %>
+</p>
+
+<p>
+  <strong>Listing:</strong>
+  <%= @listing_image.listing %>
+</p>
+
+<%= link_to 'Edit', edit_listing_image_path(@listing_image) %> |
+<%= link_to 'Back', listing_images_path %>
