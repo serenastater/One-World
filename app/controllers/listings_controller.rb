@@ -1,4 +1,6 @@
 class ListingsController < ApplicationController
+  before_action :require_host, only: [:show, :edit]
+  before_action :require_user, only: [:index, :show]
   before_action :set_listing, only: [:show, :edit, :update, :destroy]
 
   # GET /listings
