@@ -1,5 +1,5 @@
 class ListingsController < ApplicationController
-  before_action :require_host, only: [:show, :edit]
+  before_action :require_host, only: [:edit, :destroy]
   before_action :require_user, only: [:index, :show]
   before_action :set_listing, only: [:show, :edit, :update, :destroy]
 
@@ -17,6 +17,10 @@ class ListingsController < ApplicationController
   # GET /listings/new
   def new
     @listing = Listing.new
+  end
+
+  def profile
+
   end
 
   # GET /listings/1/edit

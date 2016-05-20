@@ -22,6 +22,10 @@
 <%= f.text_field :last_name %>
 </p>
 <p>
+  <%= f.label :role %>
+  <%= f.select :role, ["host", "guest"] %>
+</p>
+<p>
 <%= f.submit %>
 </p>
 <% end %>
