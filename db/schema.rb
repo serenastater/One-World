@@ -11,10 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160517212609) do
+ActiveRecord::Schema.define(version: 20160520192115) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "addresses", force: :cascade do |t|
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.string   "street_address"
+    t.string   "city"
+    t.string   "country"
+    t.decimal  "latitude"
+    t.decimal  "longitude"
+    t.integer  "listing_id"
+  end
+
+  add_index "addresses", ["listing_id"], name: "index_addresses_on_listing_id", using: :btree
 
   create_table "listing_images", force: :cascade do |t|
     t.string   "caption"
@@ -28,15 +41,12 @@ ActiveRecord::Schema.define(version: 20160517212609) do
 
   create_table "listings", force: :cascade do |t|
     t.string   "headline"
-    t.string   "street_address"
-    t.string   "city"
-    t.string   "country"
     t.text     "description"
     t.integer  "accommodates"
     t.boolean  "availability"
     t.integer  "user_id"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
 
   add_index "listings", ["user_id"], name: "index_listings_on_user_id", using: :btree
@@ -54,6 +64,7 @@ ActiveRecord::Schema.define(version: 20160517212609) do
     t.datetime "updated_at",      null: false
   end
 
+  add_foreign_key "addresses", "listings"
   add_foreign_key "listing_images", "listings"
   add_foreign_key "listings", "users"
 end
