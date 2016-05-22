@@ -2,6 +2,10 @@ Rails.application.routes.draw do
   resources :listing_images
   resources :listings
   resources :users
+  
+  resources :conversations do
+    resources :messages
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
   root 'listings#index'
