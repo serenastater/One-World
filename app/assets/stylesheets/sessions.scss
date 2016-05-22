@@ -1,3 +1,7 @@
+html {
+    font-family: Ruda;
+  }
+
 body {
   display: flex;
   min-height: 100vh;
@@ -10,8 +14,11 @@ body {
 main {
   flex: 1 0 auto;
 }
-.nav-wrapper {
+.navbar-fixed {
   font-family: Ruda;
   background-color: #ffffff;
+}
 
+.brand-logo {
+  font-family: Frijole;
 }
