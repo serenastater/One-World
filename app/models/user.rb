@@ -9,12 +9,10 @@ class User < ActiveRecord::Base
 
   def name
     "User #{:id}"
+    # email
   end
 
-  # def mailboxer_email
-  # end
-
   # def mailboxer_email(object)
-  #   self.email
+  #   email
   # end
 end

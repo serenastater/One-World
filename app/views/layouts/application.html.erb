@@ -32,6 +32,7 @@
     <ul id="nav-mobile" class="right hide-on-med-and-down">
       <% if current_user %>
         <li>Welcome, <%= current_user.first_name.capitalize %>!</li>
+        <li><%= link_to "Inbox", conversations_path %></li>
         <li><%= link_to "Log out", logout_path, method: "delete", class: 'btn-submit' %></li>
     </ul>
   </div>
@@ -50,7 +51,7 @@
         <h5 class="white-text">About Us</h5>
         <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
       </div>
-      
+
       <div class="col l4 offset-l2 s12">
         <h5 class="white-text">Links</h5>
         <ul>
