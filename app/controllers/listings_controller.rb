@@ -12,6 +12,7 @@ class ListingsController < ApplicationController
   # GET /listings/1
   # GET /listings/1.json
   def show
+    @listing = Listing.find(params[:id])
   end
 
   # GET /listings/new
@@ -25,12 +26,24 @@ class ListingsController < ApplicationController
 
   # GET /listings/1/edit
   def edit
+    @listing = Listing.find(params[:id])
   end
 
   # POST /listings
   # POST /listings.json
   def create
     @listing = Listing.new(listing_params)
+    @listing.address = Address.new
+
+    @listing.address.street_address = params['listing']['address_attributes']['street_address']
+    @listing.address.city = params['listing']['address_attributes']['city']
+    @listing.address.country = params['listing']['address_attributes']['country']
+    @listing.address.zipcode = params['listing']['address_attributes']['zipcode']
+    @listing.address.latitude = params['listing']['address_attributes']['latitude']
+    @listing.address.longitude = params['listing']['address_attributes']['longitude']
+    @listing.address.listing_id = @listing.id
+    @listing.address.save
+
 
     respond_to do |format|
       if @listing.save
@@ -46,8 +59,9 @@ class ListingsController < ApplicationController
   # PATCH/PUT /listings/1
   # PATCH/PUT /listings/1.json
   def update
+    @listing = Listing.find(params[:id])
     respond_to do |format|
-      if @listing.update(listing_params)
+      if @listing.update(listing_params{:listing})
         format.html { redirect_to @listing, notice: 'Listing was successfully updated.' }
         format.json { render :show, status: :ok, location: @listing }
       else
@@ -75,6 +89,6 @@ class ListingsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def listing_params
-      params.require(:listing).permit(:headline, :street_address, :city, :country, :description, :accommodates, :availability)
+      params.require(:listing).permit(:headline, :street_address, :city, :country, :zipcode, :latitude, :longitude, :description, :accommodates, :availability)
     end
 end
