@@ -20,13 +20,18 @@
     <% @listings.each do |listing| %>
       <tr>
         <td><%= listing.headline %></td>
+        <td><%= listing.address.street_address %></td>
+        <td><%= listing.address.city %></td>
+        <td><%= listing.address.country %></td>
         <td><%= listing.description %></td>
         <td><%= listing.accommodates %></td>
         <td><%= listing.availability %></td>
+
         <td><%= link_to 'Show', listing %></td>
         <td><%= link_to 'Edit', edit_listing_path(listing) %></td>
         <td><%= link_to 'Destroy', listing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
+      <%# end%>
     <% end %>
   </tbody>
 </table>

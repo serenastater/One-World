@@ -6,6 +6,21 @@
 </p>
 
 <p>
+  <strong>Street address:</strong>
+  <%= @listing.address.street_address %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @listing.address.city %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @listing.address.country %>
+</p>
+
+<p>
   <strong>Description:</strong>
   <%= @listing.description %>
 </p>
@@ -20,7 +35,7 @@
   <%= @listing.availability %>
 </p>
 
-<% if current_user && current_user.host? %>
+<% if current_user.host? %>
   <p class="listing-edit">
     <%= link_to "Edit Listing", edit_listing_path(@listing.id) %> |
   </p>
