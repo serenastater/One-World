@@ -11,9 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-
-ActiveRecord::Schema.define(version: 20160522174303) do
-
+ActiveRecord::Schema.define(version: 20160520192115) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,24 +25,6 @@ ActiveRecord::Schema.define(version: 20160522174303) do
     t.string   "longitude"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
-<<<<<<< HEAD
-=======
-    t.string   "street_address"
-    t.string   "city"
-    t.string   "country"
-    t.decimal  "latitude"
-    t.decimal  "longitude"
-    t.integer  "listing_id"
-    t.string   "zipcode"
-  end
-
-  add_index "addresses", ["listing_id"], name: "index_addresses_on_listing_id", using: :btree
-
-  create_table "cities", force: :cascade do |t|
-    t.string   "city_name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
->>>>>>> cb8f1f37970f8855fdc456be6153117281b4cb7e
   end
 
   create_table "listing_images", force: :cascade do |t|
