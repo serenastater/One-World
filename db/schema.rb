@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160520192115) do
+ActiveRecord::Schema.define(version: 20160522174303) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,6 +25,13 @@ ActiveRecord::Schema.define(version: 20160520192115) do
     t.string   "longitude"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
+    t.string   "zipcode"
+  end
+
+  create_table "cities", force: :cascade do |t|
+    t.string   "city_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "listing_images", force: :cascade do |t|
@@ -97,15 +104,13 @@ ActiveRecord::Schema.define(version: 20160520192115) do
     t.string   "mailbox_type",    limit: 25
     t.datetime "created_at",                                 null: false
     t.datetime "updated_at",                                 null: false
+    t.boolean  "is_delivered",               default: false
+    t.string   "delivery_method"
+    t.string   "message_id"
   end
 
   add_index "mailboxer_receipts", ["notification_id"], name: "index_mailboxer_receipts_on_notification_id", using: :btree
   add_index "mailboxer_receipts", ["receiver_id", "receiver_type"], name: "index_mailboxer_receipts_on_receiver_id_and_receiver_type", using: :btree
-
-  create_table "messageables", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
 
   create_table "users", force: :cascade do |t|
     t.string   "first_name"
