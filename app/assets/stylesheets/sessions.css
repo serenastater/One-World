@@ -15,18 +15,16 @@ main {
 
 .nav-wrapper {
   font-family: Ruda;
-
 }
 
 nav {
   background-color: #0288d1;
 }
 
-footer {
+footer.page-footer {
   background-color: #0288d1;
 }
 
 .brand-logo {
   font-family: Frijole;
-  color: #3f51b5;
 }

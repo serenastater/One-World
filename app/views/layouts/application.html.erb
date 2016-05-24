@@ -20,9 +20,9 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
-
-
+<header>
 <div class="navbar-fixed">
   <nav class="">
     <div>
@@ -42,9 +42,13 @@
    </div>
  </nav>
 </div>
-<%= yield %>
+</header>
 
-</body>
+<main>
+<%= yield %>
+</main>
+
+
 <footer class="page-footer">
   <div class="container">
     <div class="row">
@@ -66,7 +70,7 @@
   </div>
   <div class="footer-copyright">
     <div class="container">
-      © 2014 Copyright Text
+      © 2016 Copyright Text
       <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
     </div>
   </div>

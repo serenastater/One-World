@@ -3,6 +3,10 @@ h1 {
   font-family: Ruda;
 }
 
+h2 {
+  text-align: center;
+}
+
 a href {
   font-color: black;
 }
