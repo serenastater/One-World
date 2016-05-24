@@ -4,7 +4,11 @@ class User < ActiveRecord::Base
   acts_as_messageable
 
   def host?
-    self.role == 'host'
+    self.role == 'Host'
+  end
+
+  def refugee?
+    self.role == 'Refugee'
   end
 
   def name

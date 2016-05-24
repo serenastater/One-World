@@ -3,9 +3,18 @@ Rails.application.routes.draw do
   resources :listings
   resources :users
 
-  resources :conversations do
-    resources :messages
+  resources :conversations , only: [:index, :show, :destroy] do
+    member do
+      post :reply
+      post :restore
+      post :mark_as_read
+    end
+    collection do
+      delete :empty_trash
+    end
   end
+    resources :messages, only: [:new, :create]
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
   root 'listings#index'
