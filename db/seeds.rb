@@ -88,9 +88,9 @@ in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit
 accommodates: 6, availability: true, user_id: 10)
 
 #Example listing images----------------------------------------------------------------------------------
-toronto1_image1 = Listing_image.create(caption:"", picture:"")
-toronto1_image2 = Listing_image.create(caption:"", picture:"")
-toronto1_image3 = Listing_image.create(caption:"", picture:"")
+toronto1_image1 = Listing_image.create(caption:"Bedroom with futon", picture:"http://i.imgur.com/cMAvqYd.png")
+toronto1_image2 = Listing_image.create(caption:"Living Room", picture:"http://i.imgur.com/908GaZs.png")
+toronto1_image3 = Listing_image.create(caption:"Kitchen", picture:"http://i.imgur.com/F9BjYEQ.png")
 toronto2_image1 = Listing_image.create(caption:"", picture:"")
 toronto2_image2 = Listing_image.create(caption:"", picture:"")
 toronto2_image3 = Listing_image.create(caption:"", picture:"")
@@ -118,6 +118,7 @@ toronto9_image3 = Listing_image.create(caption:"", picture:"")
 toronto10_image1 = Listing_image.create(caption:"", picture:"")
 toronto10_image2 = Listing_image.create(caption:"", picture:"")
 toronto10_image3 = Listing_image.create(caption:"", picture:"")
+
 #Example hosts-------------------------------------------------------------------------------------------
 host1 = User.create(first_name: "Deanna", last_name: "Melin", email: "deanna@email.com", password_digest:
 "asdfasdf", avatar: "http://i.imgur.com/PnDd7Ly.jpg", about_me: "Bavarian bergkase cheese and wine fromage
