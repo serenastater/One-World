@@ -26,6 +26,7 @@
         <td><%= listing.description %></td>
         <td><%= listing.accommodates %></td>
         <td><%= listing.availability %></td>
+        <td><%= image_tag listing.listing_images.first.picture %></td>
 
         <td><%= link_to 'Show', listing %></td>
         <td><%= link_to 'Edit', edit_listing_path(listing) %></td>
