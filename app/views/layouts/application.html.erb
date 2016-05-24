@@ -24,21 +24,21 @@
 
 
 <div class="navbar-fixed">
-  <nav>
+  <nav class="">
     <div>
       <div>
 
-  <div class="nav-wrapper">
-    <a href="#" class="brand-logo">ONE World</a>
-    <ul id="nav-mobile" class="right hide-on-med-and-down">
-      <% if current_user %>
-        <li>Welcome, <%= current_user.first_name.capitalize %>!</li>
-        <li><%= link_to "Inbox", conversations_path %></li>
-        <li><%= link_to "Log out", logout_path, method: "delete", class: 'btn-submit' %></li>
-    </ul>
-  </div>
-   <% end %>
-    </div>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">ONE World</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <% if current_user %>
+            <li>Welcome, <%= current_user.first_name.capitalize %>!</li>
+            <li><%= link_to "Inbox", conversations_path %></li>
+            <li><%= link_to "Log out", logout_path, method: "delete", class: 'btn-submit' %></li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
    </div>
  </nav>
 </div>
