@@ -1,8 +1,8 @@
-<h1>New Conversation</h1>
+<h1>New Message</h1>
 
 <%= form_tag conversations_path, method: :post do %>
  <div>
-   <%= select_tag :user_id, options_from_collection_for_select(@recipients, :id, :first_name) %>
+  <%= select_tag :user_id, options_from_collection_for_select(@recipients, :id, :first_name) %>
  </div>
 
  <div>
@@ -15,3 +15,16 @@
 
  <%= submit_tag %>
  <% end %>
+
+ <%= link_to 'Home', current_user, class: 'btn-submit' %>
+
+ <!-- Dropdown Trigger -->
+   <a class='dropdown-button btn' href='#' data-activates='dropdown1'>Drop Me!</a>
+
+   <!-- Dropdown Structure -->
+   <ul id='dropdown1' class='dropdown-content'>
+     <li><a href="#!"></a></li>
+     <li><a href="#!">two</a></li>
+     <li class="divider"></li>
+     <li><a href="#!">three</a></li>
+   </ul>

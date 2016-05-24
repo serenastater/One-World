@@ -1,4 +1,4 @@
-<h1>All Conversations</h1>
+<h1>Messages</h1>
 
 <% @conversations.each do |conversation| %>
 <div>
@@ -7,3 +7,5 @@
 <% end%>
 
 <%= link_to 'New Conversation', new_conversation_path %>
+
+<%= link_to 'Home', current_user, class: 'btn-submit' %>

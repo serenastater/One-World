@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resources :listing_images
   resources :listings
   resources :users
-  
+
   resources :conversations do
     resources :messages
   end

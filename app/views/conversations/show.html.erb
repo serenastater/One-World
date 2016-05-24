@@ -2,7 +2,7 @@
 
 <% @conversation.receipts_for(current_user).each do |receipt| %>
  <div>
-   <div><%= receipt.message.sender.name %> commented:</div>
+   <div><%= receipt.message.sender.first_name %> wrote:</div>
    <p><%= receipt.message.body %></p>
  </div>
  <% end %>
@@ -14,3 +14,5 @@
 
   <%= submit_tag %>
   <% end %>
+
+  <%= link_to 'Home', current_user, class: 'btn-submit' %>

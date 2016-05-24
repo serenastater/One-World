@@ -2,7 +2,7 @@ class ConversationsController < ApplicationController
   before_action :current_user
   helper_method :mailbox, :conversation
   def index
-    @conversations = current_user.mailbox.conversations
+    @conversations = current_user.mailbox.inbox.all
   end
 
   def show
@@ -17,6 +17,31 @@ class ConversationsController < ApplicationController
     recipient = User.find(params[:user_id])
     receipt = current_user.send_message(recipient, params[:body], params[:subject])
     redirect_to conversations_path(receipt.conversation)
+  end
+
+# trash bin option for inbox
+  def trashbin
+    @trash ||= current_user.mailbox.trash.all
+  end
+
+  def trash
+    conversation.move_to_trash(current_user)
+    redirect_to :conversations
+  end
+
+  def untrash
+    conversation.untrash(current_user)
+    redirect_to :conversations
+  end
+
+  private
+
+  def mailbox
+    @mailbox ||= current_user.mailbox
+  end
+
+  def conversation
+    @conversation ||= mailbox.conversation.find(params[:id])
   end
 end
 
