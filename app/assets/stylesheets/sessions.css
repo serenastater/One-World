@@ -1,0 +1,29 @@
+html {
+    font-family: Ruda;
+    background-color: #e1f5fe;
+    font-color: black;
+  }
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.nav-wrapper {
+  font-family: Ruda;
+  background-color: white;
+}
+
+nav {
+  background-color: #fafafa;
+}
+
+.brand-logo {
+  font-family: Frijole;
+  font-color: 
+}

@@ -17,18 +17,16 @@ ActiveRecord::Schema.define(version: 20160522174303) do
   enable_extension "plpgsql"
 
   create_table "addresses", force: :cascade do |t|
+    t.integer  "listing_id"
+    t.string   "street_address", null: false
+    t.string   "city",           null: false
+    t.string   "country",        null: false
+    t.string   "latitude"
+    t.string   "longitude"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
-    t.string   "street_address"
-    t.string   "city"
-    t.string   "country"
-    t.decimal  "latitude"
-    t.decimal  "longitude"
-    t.integer  "listing_id"
     t.string   "zipcode"
   end
-
-  add_index "addresses", ["listing_id"], name: "index_addresses_on_listing_id", using: :btree
 
   create_table "cities", force: :cascade do |t|
     t.string   "city_name"
@@ -127,7 +125,6 @@ ActiveRecord::Schema.define(version: 20160522174303) do
     t.datetime "updated_at",      null: false
   end
 
-  add_foreign_key "addresses", "listings"
   add_foreign_key "listing_images", "listings"
   add_foreign_key "listings", "users"
   add_foreign_key "mailboxer_conversation_opt_outs", "mailboxer_conversations", column: "conversation_id", name: "mb_opt_outs_on_conversations_id"
