@@ -2,7 +2,7 @@ class ConversationsController < ApplicationController
   before_action :current_user
   helper_method :mailbox, :conversation
   def index
-    @conversations = current_user.mailbox.inbox.all
+    @conversations = current_user.mailbox.inbox
   end
 
   def show
@@ -36,7 +36,7 @@ class ConversationsController < ApplicationController
 
   private
 
-  def mailbox
+  def get_mailbox
     @mailbox ||= current_user.mailbox
   end
 
