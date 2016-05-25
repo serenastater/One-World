@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 html {
     font-family: Ruda;
     background-color: #e1f5fe;
@@ -27,4 +30,41 @@ footer.page-footer {
 
 .brand-logo {
   font-family: Frijole;
+}
+
+.grid {
+  background: #EEE;
+  width:100%;
+  margin: 0.5em 0em 2em 0em;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+  width: 20%;
+}
+
+.grid-item {
+  height: 200px;
+  float: left;
+}
+
+.grid-item--width2 { width:  60%; }
+.grid-item--width3 { width:  60%; }
+
+.grid-item--height2 { height: 200px; }
+.grid-item--height3 { height: 260px; }
+.grid-item--height4 { height: 360px; }
+
+img.home {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }

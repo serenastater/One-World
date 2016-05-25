@@ -16,3 +16,13 @@
 $(document).ready(function() {
   $('select').material_select();
 });
+
+$('.grid').masonry({
+  itemSelector: '.grid-item',
+  columnWidth: '.grid-sizer',
+  percentPosition: true
+});
+
+$container.imagesLoaded( function() {
+     $container.masonry();
+});
