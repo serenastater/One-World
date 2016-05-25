@@ -1,7 +1,7 @@
 <div class="container">
 <% page_header "Start Conversation" %>
 
-<%= form_tag messages_path, method: :post do %>
+  <%= form_tag messages_path, method: :post do %>
   <div class="form-group">
     <%= label_tag 'message[subject]', 'Subject' %>
     <%= text_field_tag 'message[subject]', nil, class: 'form-control', required: true %>
@@ -18,5 +18,7 @@
   </div>
 
   <%= submit_tag 'Send', class: 'btn-submit' %>
+
 <% end %>
+
 </div>
