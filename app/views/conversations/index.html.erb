@@ -2,13 +2,30 @@
 <div class="container">
 <h1>Messages</h1>
 
-<% @conversations.each do |conversation| %>
-<div>
-  <%= link_to conversation.subject, conversation_path(conversation) %>
+<div class="input-field">
+  <select>
+      <option><%= mailbox_section 'inbox', @box %></option>
+      <option><%= mailbox_section 'sent', @box %></option>
+      <option><%= mailbox_section 'trash', @box %></option>
+  </select>
 </div>
-<% end%>
 
-<%= link_to 'New Conversation', new_conversation_path %>
+<div>
+  <% if @box == 'trash' %>
+    <p><%= link_to 'Empty trash', empty_trash_conversations_path, class: 'btn-submit', method: :delete, data: {confirm: 'Are you sure?'} %></p>
+    <% end %>
+
+    <ul class="list-group">
+      <%= render partial: 'conversations/conversation', collection: @conversations %>
+    </ul>
+</div>
+<%# @conversations.each do |conversation| %>
+<div>
+  <%#= link_to conversation.subject, conversation_path(conversation) %>
+</div>
+<%# end%>
+
+<%= link_to 'New Message', new_message_path %> |
 
 <%= link_to 'Home', current_user, class: 'btn-submit' %>
 </div>

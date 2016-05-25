@@ -1,10 +1,21 @@
-<%= content_tag_for(:li, conversation) do |conversation| %>
-
+<%#= content_tag_for(:li, conversation) do |conversation| %>
+<li>
 <%= link_to conversation.subject, conversation_path(conversation) %>
 
-<% if conversation.is_completely_trashed?(current_user) %>
-   <%= link_to 'Untrash', untrash_conversation_path(conversation), method: :post %>
+<div>
+<% if conversation.is_trashed?(current_user) %>
+   <%= link_to 'Restore', restore_conversation_path(conversation), class: 'btn-submit', method: :post %>
   <% else %>
-   <%= link_to 'Move_to_trash', trash_conversation_path(conversation), method: :post %>
+   <%= link_to 'Move_to_trash', conversation_path(conversation), class: 'btn-submit', method: :delete, data: {confirm: 'Are you sure?'} %>
+
+   <% if conversation.is_unread?(current_user) %>
+     <%= link_to 'mark_as_read', mark_as_read_conversation_path(conversation), class: 'btn-submit', method: :post %>
    <% end %>
 <% end %>
+</div>
+
+<p><%= render 'conversations/participants', conversation: conversation %></P>
+
+  <p><%= conversation.last_message.body %>
+  <span><%= conversation.last_message.created_at.strftime("%-d %B %Y, %H:%M:%S") %></span></p>
+</li>
