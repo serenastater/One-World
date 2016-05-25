@@ -12,6 +12,7 @@
 //
 //= require turbolinks
 //= require_tree .
+//= require chosen-jquery
 
 $(document).ready(function() {
   $('select').material_select();

@@ -16,7 +16,7 @@ class ConversationsController < ApplicationController
   end
 
   def show
-    # @conversation = current_user.mailbox.conversations.find(params[:id])
+    @conversation = current_user.mailbox.conversations.find(params[:id])
   end
 
   def mark_as_read
