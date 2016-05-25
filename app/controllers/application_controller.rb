@@ -11,6 +11,10 @@ def current_user
   # @current_user = User.find_by_id(5)
 end
 
+def current_listing
+  @current_listing ||= Listing.find([:listing_id])
+end
+
 
 def require_user
   redirect_to '/login' unless current_user
