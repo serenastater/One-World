@@ -101,7 +101,7 @@ everyone loves stilton halloumi queso gouda when the cheese comes out everybody'
 jarlsberg.", role: "host", num_members: 4)
 
 #Example refugees-----------------------------------------------------------------------------------------
-refugee1 = User.create(first_name: "Kamel", last_name: "Majouz", email: "kamel@email.com", password_digest:
+refugee1 = User.create(first_name: "Kamel", last_name: "Majouz", email: "kamel@email.com", password:
 "1234asdf", avatar: "http://i.imgur.com/SAB6eMw.png", about_me: "Camembert de normandie macaroni cheese
 chalk and cheese. Red leicester cut the cheese rubber cheese cheesy feet blue castello fromage cream cheese
 ricotta. Parmesan the big cheese emmental port-salut cheesy grin fromage frais chalk and cheese cheese
@@ -110,7 +110,7 @@ leicester roquefort babybel halloumi taleggio fondue fromage frais. Roquefort ed
 halloumi halloumi cheeseburger goat. Goat.", role: "guest", num_members: "3")
 
 refugee2 = User.create(first_name: "Sherihan", last_name: "Hennan", email: "sherihan@email.com",
-password_digest: "1234asdf", avatar: "http://i.imgur.com/Njn3jXT.jpg", about_me: "Cow parmesan babybel.
+password: "1234asdf", avatar: "http://i.imgur.com/Njn3jXT.jpg", about_me: "Cow parmesan babybel.
 Halloumi cheese and wine croque monsieur babybel goat pepper jack cheeseburger cheesy feet. Macaroni
 cheese swiss mozzarella who moved my cheese feta swiss camembert de normandie bocconcini. Stinking bishop
 bavarian bergkase when the cheese comes out everybody's happy bavarian bergkase pecorino cheesy feet
