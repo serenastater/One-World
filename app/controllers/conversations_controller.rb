@@ -18,7 +18,8 @@ class ConversationsController < ApplicationController
   def show
     @conversation = current_user.mailbox.conversations.find(params[:id])
   end
-
+  
+  # marks conversation as read
   def mark_as_read
     @conversation.mark_as_read(current_user)
     redirect_to conversations_path
@@ -28,16 +29,6 @@ class ConversationsController < ApplicationController
     current_user.reply_to_conversation(@conversation, params[:body])
     redirect_to conversation_path(@conversation)
   end
-
-  # def new
-  #   @recipients = User.all
-  # end
-  #
-  # def create
-  #   recipient = User.find(params[:user_id])
-  #   receipt = current_user.send_message(recipient, params[:body], params[:subject])
-  #   redirect_to conversations_path(receipt.conversation)
-  # end
 
   def destroy
     @conversation.move_to_trash(current_user)

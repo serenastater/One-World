@@ -2,14 +2,15 @@
 <div class="container">
 <h1>Messages</h1>
 
+<div class="col s9">
 <div class="input-field">
-  <ul>
-      <%= mailbox_section 'inbox', @box %>
-      <%= mailbox_section 'sent', @box %>
-      <%= mailbox_section 'trash', @box %>
+  <ul class="tabs">
+    <li class="tab col s3"><%= mailbox_section 'inbox', @box %></li>
+    <li class="tab col s3"><%= mailbox_section 'sent', @box %></li>
+    <li class="tab col s3"><%= mailbox_section 'trash', @box %></li>
   </ul>
 </div>
-
+</div>
 <div>
   <% if @box == 'trash' %>
     <p><%= link_to 'Empty trash', empty_trash_conversations_path, class: 'btn-submit', method: :delete, data: {confirm: 'Are you sure?'} %></p>
