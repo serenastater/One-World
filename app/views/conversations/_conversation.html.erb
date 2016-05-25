@@ -1,6 +1,6 @@
 <%#= content_tag_for(:li, conversation) do |conversation| %>
-<li>
-<%= link_to conversation.subject, conversation_path(conversation) %>
+<li class="list-group">
+  <%= link_to conversation.subject, conversation_path(conversation) %>
 
 <div>
 <% if conversation.is_trashed?(current_user) %>
@@ -13,8 +13,9 @@
    <% end %>
 <% end %>
 </div>
-
-<p><%= render 'conversations/participants', conversation: conversation %></P>
+  <ul>
+    <%= render 'conversations/participants', conversation: conversation %>
+  </ul
 
   <p><%= conversation.last_message.body %>
   <span><%= conversation.last_message.created_at.strftime("%-d %B %Y, %H:%M:%S") %></span></p>

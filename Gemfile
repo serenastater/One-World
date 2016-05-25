@@ -30,7 +30,8 @@ gem 'hirb', '~> 0.7.3'
 gem 'paperclip'
 # Use Unicorn as the app server
 # gem 'unicorn'
-
+gem 'will_paginate'
+gem 'chosen-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

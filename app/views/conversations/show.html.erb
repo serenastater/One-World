@@ -1,8 +1,10 @@
+<div class="container">
 <h1><%#= @conversation.subject %></h1>
 
 <% page_header "Conversation" %>
 
 <p>Chatting with
+  <%#= @chosen_recipient %>
   <%= render 'conversations/participants', conversation: @conversation %>
 </p>
 
@@ -35,7 +37,7 @@
   </div>
   <%= submit_tag "Send Message", class: 'btn btn-primary' %>
 <% end %>
-
+</div>
 
 <!-- original mail code below -->
 <!-- <%# @conversation.receipts_for(current_user).each do |receipt| %>

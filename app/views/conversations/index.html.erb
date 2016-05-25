@@ -3,11 +3,11 @@
 <h1>Messages</h1>
 
 <div class="input-field">
-  <select>
-      <option><%= mailbox_section 'inbox', @box %></option>
-      <option><%= mailbox_section 'sent', @box %></option>
-      <option><%= mailbox_section 'trash', @box %></option>
-  </select>
+  <ul>
+      <%= mailbox_section 'inbox', @box %>
+      <%= mailbox_section 'sent', @box %>
+      <%= mailbox_section 'trash', @box %>
+  </ul>
 </div>
 
 <div>

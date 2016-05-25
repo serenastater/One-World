@@ -107,7 +107,7 @@ chalk and cheese. Red leicester cut the cheese rubber cheese cheesy feet blue ca
 ricotta. Parmesan the big cheese emmental port-salut cheesy grin fromage frais chalk and cheese cheese
 slices. Cheddar edam cheesecake cheddar cheeseburger parmesan taleggio stinking bishop. Cheesy feet red
 leicester roquefort babybel halloumi taleggio fondue fromage frais. Roquefort edam edam cheese slices
-halloumi halloumi cheeseburger goat. Goat.", role: "guest", num_members: "3")
+halloumi halloumi cheeseburger goat. Goat.", role: "refugee", num_members: "3")
 
 refugee2 = User.create(first_name: "Sherihan", last_name: "Hennan", email: "sherihan@email.com",
 password: "1234asdf", avatar: "http://i.imgur.com/Njn3jXT.jpg", about_me: "Cow parmesan babybel.
@@ -116,7 +116,7 @@ cheese swiss mozzarella who moved my cheese feta swiss camembert de normandie bo
 bavarian bergkase when the cheese comes out everybody's happy bavarian bergkase pecorino cheesy feet
 boursin who moved my cheese. Cow macaroni cheese bocconcini jarlsberg mascarpone ricotta cheeseburger
 jarlsberg. Fromage frais when the cheese comes out everybody's happy dolcelatte croque monsieur say cheese.",
-role: "guest", num_members: "3")
+role: "refugee", num_members: "3")
 
 # Example listings------------------------------------------------------------------------------------
 toronto1 = Listing.create(headline: "One bedroom in heart of Toronto", description: "Lorem ipsum dolor,
