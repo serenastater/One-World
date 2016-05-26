@@ -18,7 +18,7 @@ class ConversationsController < ApplicationController
   def show
     @conversation = current_user.mailbox.conversations.find(params[:id])
   end
-  
+
   # marks conversation as read
   def mark_as_read
     @conversation.mark_as_read(current_user)
@@ -58,7 +58,7 @@ class ConversationsController < ApplicationController
   end
 
   def get_box
-    if params[:box].blank? or !["inbox", "sent", "trash"].include?(params[:box])
+    if params[:box].blank? or !["inbox","sent","trash"].include?(params[:box])
       params[:box] = 'inbox'
     end
     @box = params[:box]
