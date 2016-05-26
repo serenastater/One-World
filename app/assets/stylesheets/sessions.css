@@ -28,8 +28,9 @@ footer.page-footer {
   background-color: #212121;
 }
 
-.brand-logo {
+nav .brand-logo {
   font-family: Frijole;
+  font-size: 2.5rem;
 }
 
 .grid {
@@ -65,7 +66,32 @@ footer.page-footer {
 .grid-item--height3 { height: 260px; }
 .grid-item--height4 { height: 360px; }
 
-img.home {
+/*img.home {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
+}*/
+
+#logo-icon {
+  width: 45px;
+  height: 45px;
+  color: white;
+  margin: 9px 12px 5px 10px;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+#footer-copyright {
+  background-color: #424242;
+}
+
+.fa {
+  -webkit-filter: invert(90%);
+  filter: invert(90%);
+  margin: 2px 20px 2px 200px;
+  position: center;
+}
+
+h5 {
+  font-family: Frijole;
+  font-weight: lighter;
 }
