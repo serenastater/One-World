@@ -10,6 +10,7 @@ class ListingImagesController < ApplicationController
   # GET /listing_images/1
   # GET /listing_images/1.json
   def show
+    # @listing_image = ListingImage.find(params[:id])
   end
 
   # GET /listing_images/new
