@@ -37,7 +37,7 @@
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <% if current_user %>
             <li>Welcome, <%= current_user.first_name.capitalize %>!</li>
-            <li><%= link_to "Inbox", conversations_path %><span class="new badge"><%= current_user.unread_inbox_count %></span></li>
+            <li><a href=""<%= link_to "Inbox", conversations_path %><span class="new badge"><%= current_user.unread_inbox_count %></span></a></li>
             <li><%= link_to "Log out", logout_path, method: "delete", class: 'btn-submit' %></li>
             <% end %>
           </ul>

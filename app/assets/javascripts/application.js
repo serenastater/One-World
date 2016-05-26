@@ -19,6 +19,10 @@ $(document).ready(function() {
   $('select').material_select();
 });
 
+$(document).ready(function(){
+  $('ul.tabs').tabs();
+});
+
 $('.grid').masonry({
   itemSelector: '.grid-item',
   columnWidth: '.grid-sizer',

@@ -2,14 +2,20 @@
 <div class="container">
 <h1>Messages</h1>
 
-<div class="col s9">
-<div class="input-field">
+<div class="row">
+<div class="col s12">
   <ul class="tabs">
-    <li class="tab col s3"><%= mailbox_section 'inbox', @box %></li>
-    <li class="tab col s3"><%= mailbox_section 'sent', @box %></li>
-    <li class="tab col s3"><%= mailbox_section 'trash', @box %></li>
+    <li class="tab col s4"><a href="#inbox">Inbox<%= mailbox_section 'inbox', @box %><span class="badge"><%= current_user.mailbox.inbox.count %></span></a></li>
+    <li class="tab col s4"><a href="#sent">Sent<%= mailbox_section 'sent', @box %></a></li>
+    <li class="tab col s4"><a href="#trash">Trash<%= mailbox_section 'trash', @box %></a></li>
   </ul>
 </div>
+  <div id="inbox" class="col s12"><%#= mailbox_section 'inbox', @box %></div>
+  <div id="sent" class="col s12"><%#= mailbox_section 'sent', @box %>
+    <div class="col s6">
+    </div>
+  </div>
+  <div id="trash" class="col s12"><%#= mailbox_section 'trash', @box %></div>
 </div>
 <div>
   <% if @box == 'trash' %>
@@ -21,11 +27,6 @@
       <%= render partial: 'conversations/conversation', collection: @conversations %>
     </ul>
 </div>
-<%# @conversations.each do |conversation| %>
-<div>
-  <%#= link_to conversation.subject, conversation_path(conversation) %>
-</div>
-<%# end%>
 
 <%= link_to 'New Message', new_message_path %> |
 
