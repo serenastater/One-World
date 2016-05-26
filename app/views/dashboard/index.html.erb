@@ -1,0 +1,19 @@
+<div class="container">
+  <h2> Navagation</h2>
+  <div>
+    <div class="chip">
+    <img <%= image_tag current_user.avatar %>>
+    <%= current_user.first_name %>
+  </div>
+    <ul>
+      <li><%#= image_tag current_user.avatar %></li>
+      <li><%= current_user.about_me %></li>
+    </ul>
+  </div>
+  <div>
+    <% @listing.each do |list| %>
+    <%= link_to 'My Listings', list, class: 'btn-submit' %>
+    <%#= current_user.listing %>
+    <% end %>
+  </div>
+</div>
