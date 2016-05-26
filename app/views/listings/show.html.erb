@@ -1,15 +1,17 @@
 <div class="container">
-<p id="notice"><%= notice %></p>
+<%= @listing.listing_images.each do |image|%>
+  <%= image_tag(image.picture) %>
+<% end %>
 
 <p>
   <strong>Headline:</strong>
   <%= @listing.headline %>
 </p>
 
-<p>
+<!-- <p>
   <strong>Street address:</strong>
-  <%= @listing.address.street_address %>
-</p>
+  <% @listing.address.street_address %>
+</p> -->
 
 <p>
   <strong>City:</strong>
@@ -31,12 +33,12 @@
   <%= @listing.accommodates %>
 </p>
 
-<p>
+<!-- <p>
   <strong>Availability:</strong>
-  <%= @listing.availability %>
-</p>
+  <% @listing.availability %>
+</p> -->
 
-<%= @listing.user_id %>
+<% @listing.user_id %>
 
 <%# if current_user.refugee? %>
   <%= link_to 'Send Message', new_message_path(to: @listing.user.id), class: 'btn-submit' %>

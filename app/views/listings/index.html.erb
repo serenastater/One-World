@@ -2,8 +2,8 @@
 <h1>Available Housing</h1>
   <div class="row">
     <% @listings.each do |listing| %>
-    <div class="col s12 m7 l6">
-      <div class="card">
+    <div class="col s12 m7 l4">
+      <div class="card large">
         <div class="card-image">
           <%= image_tag listing.listing_images.first.picture %>
         </div>
@@ -11,9 +11,10 @@
           <%= listing.headline %>
         </span>
         <div class="card-content">
-          <%= listing.description %>
+          <%= listing.description.truncate(180) %>
+        <br>
+          <p> Accommodates: <%= listing.accommodates %> </p>
         </div>
-        <%= listing.accommodates %>
         <div class="card-action">
           <%= link_to 'View Home', listing %>
         </div>
@@ -46,5 +47,5 @@
 
 <br>
 </div>
-<%= link_to 'New Listing', new_listing_path %> |
-<%= link_to 'Home', current_user, class: 'btn-submit' %>
+<%#= link_to 'New Listing', new_listing_path %> |
+<%#= link_to 'Home', current_user, class: 'btn-submit' %>

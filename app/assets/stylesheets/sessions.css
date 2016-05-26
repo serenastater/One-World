@@ -33,6 +33,7 @@ footer.page-footer {
 }
 
 .grid {
+  position: relative;
   background: #EEE;
   width:100%;
   margin: 0.5em 0em 2em 0em;
