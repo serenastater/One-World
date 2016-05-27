@@ -1,34 +1,29 @@
-
 <div class="container">
 <h1>Messages</h1>
 
+<div>
+  <%= link_to 'New Message', new_message_path %>
+  <%= link_to 'Home', '/profile', class: 'btn-submit' %>
+</div>
+
 <div class="row">
-<div class="col s12">
-  <ul class="tabs">
-    <li class="tab col s4"><a href="#inbox"><%= mailbox_section 'inbox', @box %><span class="badge"><%= current_user.mailbox.inbox.count %></span></a></li>
-    <li class="tab col s4"><a href="#sent"><%= mailbox_section 'sent', @box %></a></li>
-    <li class="tab col s4"><a href="#trash"><%= mailbox_section 'trash', @box %></a></li>
+  <div class="col s12 blue-grey">
+    <ul class="tabs blue-grey lighten-2">
+      <li class="tab col s4"><a href="#inbox">Inbox<span class="badge"><%= current_user.mailbox.inbox.count %></a></span></li>
+      <li class="tab col s4"><a href="#sent">Sent</a></li>
+      <li class="tab col s4"><a href="#trash">Trash</a></li>
   </ul>
 </div>
-  <div id="inbox" class="col s12"><% mailbox_section 'inbox', @box %></div>
-  <div id="sent" class="col s12"><%#= mailbox_section 'sent', @box %>
-    <div class="col s6">
+
+<div id="inbox" class="col s12">
+  <%= render partial: 'conversations/conversation', collection: @inbox %>
+</div>
+  <div id="sent" class="col s12">
+    <%= render partial: 'conversations/conversation', collection: @sent %>
+  </div>
+    <div id="trash" class="col s12">
+      <%= render partial: 'conversations/conversation', collection: @trash %>
+      <%= link_to 'Empty trash', empty_trash_conversations_path, class: 'btn-submit', method:   :delete, data: {confirm: 'Are you sure?'} %>
     </div>
   </div>
-  <div id="trash" class="col s12"><%#= mailbox_section 'trash', @box %></div>
-</div>
-<div>
-  <% if @box == 'trash' %>
-    <p><%= link_to 'Empty trash', empty_trash_conversations_path, class: 'btn-submit', method: :delete, data: {confirm: 'Are you sure?'} %></p>
-    <% end %>
-  </div>
-  <div>
-    <ul class="list-group">
-      <%= render partial: 'conversations/conversation', collection: @conversations %>
-    </ul>
-</div>
-
-<%= link_to 'New Message', new_message_path %> |
-
-<%= link_to 'Home', current_user, class: 'btn-submit' %>
 </div>

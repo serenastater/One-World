@@ -6,13 +6,17 @@ class ConversationsController < ApplicationController
   # helper_method :mailbox, :conversation
 
   def index
-    if @box.eql? "inbox"
-      @conversations = @mailbox.inbox
-    elsif @box.eql? "sent"
-      @conversations = @mailbox.sentbox
-    else
-      @conversations = @mailbox.trash
-    end
+    @conversations = @mailbox.inbox
+        @inbox = @mailbox.inbox
+        @trash = @mailbox.trash
+        @sent = @mailbox.sentbox
+    # if @box.eql? "inbox"
+    #   @conversations = @mailbox.inbox
+    # elsif @box.eql? "sent"
+    #   @conversations = @mailbox.sentbox
+    # else
+    #   @conversations = @mailbox.trash
+    # end
   end
 
   def show

@@ -2,9 +2,9 @@
 <li class="list-group">
   <%= link_to conversation.subject, conversation_path(conversation) %>
 
-<div class="btn-group">
+<div class="btn-group right-align">
 <% if conversation.is_trashed?(current_user) %>
-   <%= link_to 'Restore', restore_conversation_path(conversation), class: 'btn-submit', method: :post %>
+   <%= link_to 'Restore', restore_conversation_path(conversation), class: 'btn-flat waves-effect waves-teal', method: :post %>
   <% else %>
    <%= link_to 'Move to trash', conversation_path(conversation), class: 'btn-submit', method: :delete, data: {confirm: 'Are you sure?'} %>
 
