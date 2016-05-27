@@ -2,19 +2,19 @@
 <h1>Messages</h1>
 
 <div>
-  <%= link_to 'New Message', new_message_path %>
+  <%= link_to 'New Message', new_message_path, class: 'btn-submit' %>
   <%= link_to 'Home', '/profile', class: 'btn-submit' %>
 </div>
-
+<!-- Mailbox tabs -->
 <div class="row">
-  <div class="col s12 blue-grey">
-    <ul class="tabs blue-grey lighten-2">
-      <li class="tab col s4"><a href="#inbox">Inbox<span class="badge"><%= current_user.mailbox.inbox.count %></a></span></li>
+  <div class="col s12">
+    <ul class="tabs blue-grey lighten-2 blue-text">
+      <li class="tab col s4"><a href="#inbox">Inbox<span class="badge"><%= current_user.mailbox.inbox.count %></span></a></li>
       <li class="tab col s4"><a href="#sent">Sent</a></li>
       <li class="tab col s4"><a href="#trash">Trash</a></li>
   </ul>
 </div>
-
+<!-- Mailbox tab views -->
 <div id="inbox" class="col s12">
   <%= render partial: 'conversations/conversation', collection: @inbox %>
 </div>
@@ -23,7 +23,7 @@
   </div>
     <div id="trash" class="col s12">
       <%= render partial: 'conversations/conversation', collection: @trash %>
-      <%= link_to 'Empty trash', empty_trash_conversations_path, class: 'btn-submit', method:   :delete, data: {confirm: 'Are you sure?'} %>
+      <%= link_to 'Empty trash', empty_trash_conversations_path, class: 'btn-flat', method:   :delete, data: {confirm: 'Are you sure?'} %>
     </div>
   </div>
 </div>
