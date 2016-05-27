@@ -4,7 +4,7 @@
     <% @listings.each do |listing| %>
     <div class="col s12 m7 l4">
       <div class="card large">
-        <div class="card-image">
+        <div class="card-image" id="listings-card">
           <%= image_tag listing.listing_images.first.picture %>
         </div>
         <span class="card-title">
