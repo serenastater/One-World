@@ -14,3 +14,12 @@ a href {
 card-title a {
   font-color:black;
 }
+
+#card-reveal-title {
+  font-size: 1.5em;
+  font-family: Frijole;
+}
+
+.cities-page-line {
+  background-color: #424242;
+}
