@@ -1,4 +1,8 @@
-#listings-card {
-  height: 180px;
-  width: auto;
+.carousel-item {
+  width: 50% !important;
+  height: 100% !important;
+}
+
+.carousel {
+  margin: 5em auto;
 }

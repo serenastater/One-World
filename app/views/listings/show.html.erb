@@ -9,7 +9,7 @@ $(document).ready(function(){
 
 </script>
 
-<div class="container">
+
   <div class="carousel">
       <% @listing.listing_images.each do |image|%>
         <a class="carousel-item">
@@ -17,7 +17,7 @@ $(document).ready(function(){
         </a>
       <% end %>
   </div>
-
+<div class="container">
   <p>
     <%= @listing.headline %> in <%= @listing.address.city %>
   </p>

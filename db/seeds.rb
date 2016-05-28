@@ -119,7 +119,7 @@ jarlsberg. Fromage frais when the cheese comes out everybody's happy dolcelatte 
 role: "refugee", num_members: "3")
 
 # Example listings------------------------------------------------------------------------------------
-toronto1 = Listing.create(headline: "One bedroom in heart of Toronto", description: "Lorem ipsum dolor,
+toronto1 = Listing.create(headline: "Quiet one bedroom", description: "Lorem ipsum dolor,
 consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.
 Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed
 augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad
@@ -129,7 +129,7 @@ Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas p
 risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet.",
 accommodates: 4, availability: true, user_id: 1, address_attributes: { street_address: '123 Test Lane', city: 'Toronto', country: 'Canada'})
 
-toronto2 = Listing.create(headline: "Room for 6 in Toronto", description: "Lorem ipsum dolor sit amet,
+toronto2 = Listing.create(headline: "Room for 6", description: "Lorem ipsum dolor sit amet,
 consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.
 Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus
 sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu
@@ -139,14 +139,14 @@ Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas p
 risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet.",
 accommodates: 6, availability: true, user_id: 2, address_attributes: { street_address: '123 Test Lane', city: 'Toronto', country: 'Canada'})
 
-toronto3 = Listing.create(headline: "Cozy private room with attached bath", description: "Lorem ipsum dolor
+toronto3 = Listing.create(headline: "Attached bath", description: "Lorem ipsum dolor
 sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
 Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec
 tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti
 sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in
 libero.", accommodates: 4, availability: true, user_id: 3, address_attributes: { street_address: '123 Test Lane', city: 'Toronto', country: 'Canada'})
 
-toronto4 = Listing.create(headline: "Two queen beds & 24hr security", description: "Lorem ipsum dolor
+toronto4 = Listing.create(headline: "24 hour security", description: "Lorem ipsum dolor
 sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus
 diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.
 Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class
@@ -160,7 +160,7 @@ Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed l
 euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at
 interdum magna augue eget diam.", accommodates: 6, availability: true, user_id: 5, address_attributes: { street_address: '123 Test Lane', city: 'Toronto', country: 'Canada'})
 
-toronto6 = Listing.create(headline: "Two bedrooms on the lake", description: "Vestibulum ante ipsum
+toronto6 = Listing.create(headline: "View on the lake", description: "Vestibulum ante ipsum
 primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent
 blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede
 facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt
@@ -175,14 +175,14 @@ lectus, commodo ac, facilisis ac, ultricies eu, pede. Ut orci risus, accumsan po
 aliquet eget, justo. Sed pretium blandit orci. Ut eu diam at pede suscipit sodales.", accommodates: 2,
 availability: true, user_id: 7, address_attributes: { street_address: '123 Test Lane', city: 'Toronto', country: 'Canada'})
 
-toronto8 = Listing.create(headline: "Large loft steps to the subway", description: "Lorem ipsum dolor
+toronto8 = Listing.create(headline: "Steps to the subway", description: "Lorem ipsum dolor
 sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
 Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec
 tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti
 sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in
 libero. Sed dignissim lacinia nunc.", accommodates: 4, availability: true, user_id: 8, address_attributes: { street_address: '123 Test Lane', city: 'Toronto', country: 'Canada'})
 
-toronto9 = Listing.create(headline: "Sunny Roncesvalles Studio", description: "Curabitur tortor.
+toronto9 = Listing.create(headline: "Sunny studio", description: "Curabitur tortor.
 Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique
 sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis,
 luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus,
@@ -190,7 +190,7 @@ ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum v
 taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante.",
 accommodates: 2, availability: true, user_id: 9, address_attributes: { street_address: '123 Test Lane', city: 'Toronto', country: 'Canada'})
 
-toronto10 = Listing.create(headline: "Small apartment in downtown family home", description: "Etiam
+toronto10 = Listing.create(headline: "Downtown family home", description: "Etiam
 ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna.
 Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam.
 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia
@@ -205,33 +205,42 @@ x = 1
 end
 
 #Example listing images----------------------------------------------------------------------------------
-toronto1_image1 = ListingImage.create(caption:"Bedroom with futon", picture:"http://i.imgur.com/cMAvqYd.png",listing_id:1 )
+toronto1_image1 = ListingImage.create(caption:"Bedroom with futon", picture:"http://i.imgur.com/ZY4EOVb.jpg",listing_id:1 )
 toronto1_image2 = ListingImage.create(caption:"Living Room", picture:"http://i.imgur.com/908GaZs.png",listing_id:1 )
 toronto1_image3 = ListingImage.create(caption:"Kitchen", picture:"http://i.imgur.com/F9BjYEQ.png",listing_id:1 )
-toronto2_image1 = ListingImage.create(caption:"House from outside", picture:"http://i.imgur.com/nvikhbv.png",listing_id:2)
+toronto2_image1 = ListingImage.create(caption:"House from outside", picture:"http://i.imgur.com/QaQzeLE.jpg",listing_id:2)
 toronto2_image2 = ListingImage.create(caption:"Master bedroom", picture:"http://i.imgur.com/VHIS0vD.png",listing_id:2)
 toronto2_image3 = ListingImage.create(caption:"Second bedroom", picture:"http://i.imgur.com/cWra61d.png",listing_id:2)
-toronto3_image1 = ListingImage.create(caption:"Living room & dine-in kitchen", picture:"http://i.imgur.com/cKR5MlM.png",listing_id:3)
+toronto3_image1 = ListingImage.create(caption:"Living room & dine-in kitchen", picture:"http://i.imgur.com/hwv7WM4.jpg",listing_id:3)
 toronto3_image2 = ListingImage.create(caption:"Master bedroom", picture:"http://i.imgur.com/bDAHE1y.png",listing_id:3)
 toronto3_image3 = ListingImage.create(caption:"Secondary bedroom", picture:"http://i.imgur.com/sSKIsZv.png",listing_id:3)
-toronto4_image1 = ListingImage.create(caption:"Living Room", picture:"[Imgur](http://i.imgur.com/5tE9IbI.png)",listing_id:4)
+toronto4_image1 = ListingImage.create(caption:"Living Room", picture:"http://i.imgur.com/3AiXJgu.jpg",listing_id:4)
 toronto4_image2 = ListingImage.create(caption:"Bedroom", picture:"http://i.imgur.com/5tE9IbI.png",listing_id:4)
 toronto4_image3 = ListingImage.create(caption:"Kitchen", picture:"http://i.imgur.com/tv90VDx.png",listing_id:4)
-toronto5_image1 = ListingImage.create(caption:"First bedroom", picture:"http://i.imgur.com/yWOv3f4.png",listing_id:5)
+toronto5_image1 = ListingImage.create(caption:"First bedroom", picture:"http://i.imgur.com/kpFBvQT.jpg",listing_id:5)
 toronto5_image2 = ListingImage.create(caption:"Second bedroom", picture:"http://i.imgur.com/1N3MCTQ.png",listing_id:5)
 toronto5_image3 = ListingImage.create(caption:"Bathroom", picture:"http://i.imgur.com/JVLXwXd.png",listing_id:5)
-toronto6_image1 = ListingImage.create(caption:"Bedroom 1", picture:"http://i.imgur.com/Olhi865.png",listing_id:6)
+toronto6_image1 = ListingImage.create(caption:"Bedroom 1", picture:"http://i.imgur.com/904gZx1.jpg",listing_id:6)
 toronto6_image2 = ListingImage.create(caption:"Bedroom 2", picture:"http://i.imgur.com/w068yTI.png",listing_id:6)
 toronto6_image3 = ListingImage.create(caption:"Bedroom 3", picture:"http://i.imgur.com/YVpWOoB.png",listing_id:6)
-toronto7_image1 = ListingImage.create(caption:"Outdoor patio", picture:"http://i.imgur.com/dP7bXHc.png",listing_id:7)
+toronto7_image1 = ListingImage.create(caption:"Outdoor patio", picture:"http://i.imgur.com/3ZHrKKz.jpg",listing_id:7)
 toronto7_image2 = ListingImage.create(caption:"Living Room & Kitchen", picture:"http://i.imgur.com/YVoWSwC.png",listing_id:7)
 toronto7_image3 = ListingImage.create(caption:"Bedroom", picture:"http://i.imgur.com/8GYXzoS.png",listing_id:7)
-toronto8_image1 = ListingImage.create(caption:"Living room", picture:"http://i.imgur.com/1K14Kf4.png",listing_id:8)
+toronto8_image1 = ListingImage.create(caption:"Living room", picture:"http://i.imgur.com/UKmcQWC.jpg",listing_id:8)
 toronto8_image2 = ListingImage.create(caption:"Kitchen", picture:"http://i.imgur.com/SKgubRt.png",listing_id:8)
 toronto8_image3 = ListingImage.create(caption:"Bedroom", picture:"http://i.imgur.com/1z5tAlb.png",listing_id:8)
-toronto9_image1 = ListingImage.create(caption:"Bedroom", picture:"http://i.imgur.com/rMrGYma.png",listing_id:9)
+toronto9_image1 = ListingImage.create(caption:"Bedroom", picture:"http://i.imgur.com/0zoGlUe.jpg",listing_id:9)
 toronto9_image2 = ListingImage.create(caption:"Bathroom", picture:"http://i.imgur.com/2UMRO5O.png",listing_id:9)
 toronto9_image3 = ListingImage.create(caption:"Living Room", picture:"http://i.imgur.com/8yiWiH8.png",listing_id:9)
-toronto10_image1 = ListingImage.create(caption:"Bedroom", picture:"http://i.imgur.com/f5RRUq2.png",listing_id:10)
-toronto10_image2 = ListingImage.create(caption:"Second bedroom with crib", picture:"http://i.imgur.com/PS0kTOy.png",listing_id:10)
-toronto10_image3 = ListingImage.create(caption:"View from outside", picture:"http://i.imgur.com/6aAnS4n.png",listing_id:10)
+toronto10_image1 = ListingImage.create(caption:"Bedroom", picture:"http://i.imgur.com/4mvEkeZ.jpg",listing_id:10)
+toronto10_image2 = ListingImage.create(caption:"Second bedroom with crib", picture:"http://i.imgur.com/qUS67FP.png",listing_id:10)
+toronto10_image3 = ListingImage.create(caption:"View from outside", picture:"http://i.imgur.com/Z74ZsPu.png",listing_id:10)
+toronto10_image4 = ListingImage.create(caption:"Bedroom", picture:"http://i.imgur.com/Zgi3dvM.png",listing_id:10)
+toronto10_image5 = ListingImage.create(caption:"Second bedroom with crib", picture:"http://i.imgur.com/s55C6l7.png",listing_id:10)
+toronto10_image6 = ListingImage.create(caption:"View from outside", picture:"http://i.imgur.com/MYKJyDa.png",listing_id:10)
+toronto10_image7 = ListingImage.create(caption:"Bedroom", picture:"http://i.imgur.com/w36Wc3j.png",listing_id:10)
+toronto10_image8 = ListingImage.create(caption:"Second bedroom with crib", picture:"http://i.imgur.com/uyyM2cz.png",listing_id:10)
+toronto10_image9 = ListingImage.create(caption:"View from outside", picture:"http://i.imgur.com/ebPTibt.png",listing_id:10)
+toronto10_image10 = ListingImage.create(caption:"Bedroom", picture:"http://i.imgur.com/0iBlEmi.png",listing_id:10)
+toronto10_image11 = ListingImage.create(caption:"Second bedroom with crib", picture:"http://i.imgur.com/NBDyJKX.png",listing_id:10)
+toronto10_image12 = ListingImage.create(caption:"View from outside", picture:"http://i.imgur.com/dbDfSr6.png",listing_id:10)
