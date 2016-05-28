@@ -14,10 +14,3 @@
  *= require_self
  */
 @import 'chosen';
-
-.one-world {
-  display: inline;
-  font-family: Frijole;
-  font-size: 10em;
-  color: #212121;
-}

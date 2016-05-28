@@ -14,6 +14,13 @@
 //= require_tree .
 //= require chosen-jquery
 //= require jquery.turbolinks
+$(document).ready(function(){
+     $('.carousel').carousel(
+       dist:0,
+       shift:0,
+       padding:20,
+     );
+   });
 
 $(document).ready(function() {
   $('select').material_select();
@@ -23,11 +30,11 @@ $(document).ready(function(){
   $('ul.tabs').tabs();
 });
 
-$('.grid').masonry({
-  itemSelector: '.grid-item',
-  columnWidth: '.grid-sizer',
-  percentPosition: true
-});
+// $('.grid').masonry({
+//   itemSelector: '.grid-item',
+//   columnWidth: '.grid-sizer',
+//   percentPosition: true
+// });
 
 $container.imagesLoaded( function() {
      $container.masonry();
