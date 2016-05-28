@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   resources :listing_images
   resources :listings
   resources :users
+  # patch 'user/:id', controller: 'user', action: :update
 
   resources :conversations , only: [:index, :show, :destroy] do
     member do
@@ -25,6 +26,7 @@ Rails.application.routes.draw do
   get 'logout' => 'sessions#destroy'
   get 'cities' => 'cities#index'
   get '/profile' => 'dashboard#index'
+  patch 'users/:id', to: 'users#update'
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 

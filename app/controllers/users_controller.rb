@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
+  attr_accessor :avatar, :avatar_file_name, :avatar_content_type
 
   # GET /users
   # GET /users.json

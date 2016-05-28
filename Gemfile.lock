@@ -7,6 +7,17 @@ GIT
       foreigner (>= 0.9.1)
       rails (>= 3.2.0)
 
+GIT
+  remote: git://github.com/thoughtbot/paperclip.git
+  revision: d61b7069c2ce7226e9b0ea65bafc0a21d2a9c19e
+  specs:
+    paperclip (5.0.0.beta2)
+      activemodel (>= 4.2.0)
+      activesupport (>= 4.2.0)
+      cocaine (~> 0.5.5)
+      mime-types
+      mimemagic (~> 0.3.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -107,11 +118,6 @@ GEM
     multi_json (1.12.0)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
-    paperclip (4.2.4)
-      activemodel (>= 3.2.0)
-      activesupport (>= 3.2.0)
-      cocaine (~> 0.5.5)
-      mime-types
     pg (0.18.4)
     rack (1.6.4)
     rack-test (0.6.3)
@@ -196,7 +202,7 @@ DEPENDENCIES
   jquery-rails
   jquery-turbolinks
   mailboxer!
-  paperclip
+  paperclip!
   pg (~> 0.15)
   rails (= 4.2.6)
   rails-erd
