@@ -1,30 +1,17 @@
 <div class="container">
-<%= @listing.listing_images.each do |image|%>
-  <%= image_tag(image.picture) %>
-<% end %>
+  <div class="carousel">
+    <a class="carousel-item" href="">
+      <%= @listing.listing_images.each do |image|%>
+        <%= image_tag(image.picture) %>
+    </a>
+      <% end %>
+  </div>
 
 <p>
-  <strong>Headline:</strong>
-  <%= @listing.headline %>
-</p>
-
-<!-- <p>
-  <strong>Street address:</strong>
-  <% @listing.address.street_address %>
-</p> -->
-
-<p>
-  <strong>City:</strong>
-  <%= @listing.address.city %>
+  <%= @listing.headline %> in <%= @listing.address.city %>
 </p>
 
 <p>
-  <strong>Country:</strong>
-  <%= @listing.address.country %>
-</p>
-
-<p>
-  <strong>Description:</strong>
   <%= @listing.description %>
 </p>
 
@@ -33,15 +20,16 @@
   <%= @listing.accommodates %>
 </p>
 
-<!-- <p>
-  <strong>Availability:</strong>
-  <% @listing.availability %>
-</p> -->
+<p>
+  <strong>Hosted by:</strong>
+  <%= @listing.user_id %>
+</p>
 
 <%# if current_user.refugee? %>
 <div>
   <%= link_to 'Profile', user_path(@listing.user_id) %>
 </div>
+<div>
   <%= link_to 'Send Message', new_message_path(to: @listing.user.id), class: 'btn-submit' %>
   <%# end %>
 
@@ -52,4 +40,6 @@
 <% end %>
 <%= link_to 'Back', listings_path %>
 <%= link_to 'Home', current_user, class: 'btn-submit' %>
+</div>
+
 </div>
