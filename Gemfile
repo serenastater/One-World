@@ -28,7 +28,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 gem 'hirb', '~> 0.7.3'
-gem 'paperclip'
+gem 'paperclip', git: "git://github.com/thoughtbot/paperclip.git"
 # Use Unicorn as the app server
 # gem 'unicorn'
 gem 'will_paginate'
