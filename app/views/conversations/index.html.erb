@@ -1,20 +1,20 @@
 <div class="container">
 <h1>Messages</h1>
 
-<div class="divider"></div>
+<div class="divider mailbox-divider"></div>
 
 <div>
   <%= link_to 'New Message', new_message_path, class: 'btn-submit' %>
   <%= link_to 'Home', '/profile', class: 'btn-submit' %>
 </div>
 <!-- Mailbox tabs -->
-<div class="row">
+<div class="row user-mailbox card-panel">
   <div class="col s12">
-    <ul class="tabs blue-grey lighten-2 blue-text">
-      <li class="tab col s4 messages-tab"><a href="#inbox">Inbox<span class="badge"><%= current_user.mailbox.inbox.count %></span></a></li>
-      <li class="tab col s4 messages-tab"><a href="#sent">Sent</a></li>
-      <li class="tab col s4 messages-tab"><a href="#trash">Trash</a></li>
-  </ul>
+      <ul class="tabs blue-grey lighten-2 blue-text">
+        <li class="tab col s4 messages-tab"><a href="#inbox">Inbox<span class="badge"><%= current_user.mailbox.inbox.count %></span></a></li>
+        <li class="tab col s4 messages-tab"><a href="#sent">Sent</a></li>
+        <li class="tab col s4 messages-tab"><a href="#trash">Trash</a></li>
+      </ul>
 </div>
 <!-- Mailbox tab views -->
 <div id="inbox" class="col s12">

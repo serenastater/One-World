@@ -41,7 +41,7 @@
 
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <% if current_user %>
-            <li id="avatar-nav-img"><a href="<%= '/profile' %>"> <img src="http://i.imgur.com/PnDd7Ly.jpg" alt="" class="circle responsive-img"></a></li>
+            <li id="avatar-nav-img"><a href="<%= '/profile' %>"> <img src="<%= current_user.avatar %>" alt="" class="circle responsive-img"></a></li>
             <li>Welcome, <%= current_user.first_name.capitalize %>!</li>
             <li><a href="/conversations">Inbox<span class="new badge blue" ><%= current_user.unread_inbox_count %></span></a></li>
             <li><%= link_to "Log out", logout_path, method: "delete", class: 'btn-submit' %></li>

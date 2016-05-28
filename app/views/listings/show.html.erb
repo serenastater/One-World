@@ -33,7 +33,8 @@ $(document).ready(function(){
 
   <p>
     <strong>Hosted by:</strong>
-    <%= @listing.user_id %>
+    <%= @listing.user.first_name %>
+    <img class="circle" <%= image_tag @listing.user.avatar.url(:icon) %>
   </p>
 
 
