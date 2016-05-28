@@ -58,8 +58,8 @@ h5 {
   font-weight: lighter;
 }
 
-#messages-tab {
-  color: #039be5
+.tabs .tab.messages-tab a {
+  color: #039be5;
 }
 
 .banner {
@@ -68,15 +68,21 @@ h5 {
 }
 
 .btn {
-  background-color: #039be5
+  background-color: #039be5;
 }
 .btn:hover {
-  background-color: #29b6f6
+  background-color: #29b6f6;
 }
 
 #session_password:focus, #session_email:focus {
   border-bottom: 1px solid #039be5;
   box-shadow:  0 1px 0 0 #039be5;
+}
+
+#avatar-nav-img {
+  width: 75px;
+  height: 75px;
+  margin-right: 10px;
 }
 
 /* --- DON'T DELETE -- */
