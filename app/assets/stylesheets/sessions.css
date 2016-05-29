@@ -86,6 +86,9 @@ nav .brand-logo {
   padding: none;
 }
 
+#map {
+  width: 100%;
+}
 
 /*.user-mailbox {
   border: 1px solid black;

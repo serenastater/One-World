@@ -10,3 +10,10 @@
 h3 {
   margin: auto;
 }
+
+#map {
+  margin: 1em auto;
+  height: 300px;
+  width: 100%;
+  position: fixed;
+}
