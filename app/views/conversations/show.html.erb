@@ -1,28 +1,25 @@
 <div class="container">
-<h1><%#= @conversation.subject %></h1>
 
 <% page_header "Conversation" %>
 <div class="card-panel">
-<p>Chatting with
-  <%= render 'conversations/participants', conversation: @conversation %>
-</p>
-<div class="divider"></div>
+  <div class="panel-heading center-align">
+  <h5>Chatting with</h5>
+  <h5><%= render 'conversations/participants', conversation: @conversation %></h5>
+</div>
 <div class="panel panel-default">
-  <div class="panel-heading"><%= @conversation.subject %></div>
-
+<div class="divider"></div>
   <div class="panel-body">
     <div class="messages">
       <% @conversation.receipts_for(current_user).each do |receipt| %>
         <div class="media">
           <% message = receipt.message %>
           <div class="media-left">
-            <img class="circle" <%= image_tag message.sender.avatar.url(:icon) %>
-            <%= message.sender.first_name %> wrote:
+            <img class="convo-img" <%= image_tag message.sender.avatar.url(:small) %>
+            At <%= message.created_at.strftime("%l:%M%p #{message.sender.first_name}") %> wrote:
           </div>
           <div class="media-body">
-            <h6 class="media-heading"></h6>
-            <p><%= message.body %></p>
-            <%= message.created_at.strftime("%-d %B %Y, %H:%M:%S") %>
+            <p class="convo-body center-align"><%= message.body %></p>
+            <p class="convo-start-on right-align"><%= message.created_at.strftime("%B %-d %Y") %></p>
           </div>
         </div>
       <div class="divider"></div>
