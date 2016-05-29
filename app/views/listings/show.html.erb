@@ -6,17 +6,15 @@ $(document).ready(function(){
     padding:20,
   });
 });
-
 </script>
 
-
-  <div class="carousel">
-      <% @listing.listing_images.each do |image|%>
-        <a class="carousel-item">
-          <%= image_tag(image.picture) %>
-        </a>
-      <% end %>
-  </div>
+<div class="carousel">
+  <% @listing.listing_images.each do |image|%>
+    <a class="carousel-item">
+      <%= image_tag(image.picture) %>
+    </a>
+  <% end %>
+</div>
 
 <div class="container">
  <div class="row">
@@ -40,18 +38,17 @@ $(document).ready(function(){
        <%= @listing.description %>
      </p>
    </div>
-</div>
+ </div>
 
-<%# if current_user.refugee? %>
+ <div>
+   <%= link_to "Contact #{@listing.user.first_name}", new_message_path(to: @listing.user.id), class: "btn-submit waves-effect waves-light btn" %>
 
-<div>
-  <%#= link_to 'Contact' @listing.user.first_name, new_message_path(to: @listing.user.id), class: 'btn-submit' %>
-<% if current_user.role == 'Host' %>
-  <p class="listing-edit">
-    <%= link_to "Edit Listing", edit_listing_path(@listing.id) %> |
-  </p>
-<% end %>
-<%= link_to 'Back', listings_path %>
+   <% if current_user.role == 'Host' %>
+      <p class="listing-edit">
+        <%= link_to "Edit Listing", edit_listing_path(@listing.id), class: "btn-submit waves-effect waves-light btn" %> |
+      </p>
+    <% end %>
+    <%= link_to 'Back', listings_path, class: "btn-submit waves-effect waves-light btn" %>
 
-</div>
+  </div>
 </div>

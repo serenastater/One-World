@@ -1,48 +1,25 @@
 <div class="container">
 
-<p>
-  <strong>First name:</strong>
-  <%= @user.first_name %>
-</p>
+  <p>
+    <h4>
+      <%= @user.first_name %>
+      <%= @user.last_name %>
+    </h4>
+  </p>
 
-<p>
-  <strong>Last name:</strong>
-  <%= @user.last_name %>
-</p>
+  <p>
+    <!-- <img src="<%= @user.avatar %>"> -->
+    <%= image_tag @user.avatar.url(:large) %>
+  </p>
 
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
-
-<!-- <p>
-  <strong>Password digest:</strong>
-  <%= @user.password_digest %>
-</p> -->
-
-<p>
-  <strong>Avatar:</strong>
-  <!-- <img src="<%= @user.avatar %>"> -->
-  <%= image_tag @user.avatar.url(:large) %>
-</p>
-
-<p>
-  <strong>About me:</strong>
-  <%= @user.about_me %>
-</p>
-
-<p>
-  <strong>Role:</strong>
-  <%= @user.role %>
-</p>
-
-<p>
-  <strong>Num members:</strong>
-  <%= @user.num_members %>
-</p>
+  <p>
+    <strong>About me:</strong>
+    <%= @user.about_me %>
+  </p>
 
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+  <%#= link_to 'Edit', edit_user_path(@user) %>
+  <%= link_to "Contact #{@user.first_name}", new_message_path(to: @user), class: "btn-submit waves-effect waves-light btn" %>
+  <%= link_to 'Back', :back, class: "btn-submit waves-effect waves-light btn" %>
 
 </div>

@@ -83,7 +83,9 @@ nav .brand-logo {
   width: 75px;
   height: 75px;
   margin: 5px 5px 2px auto;
+  padding: none;
 }
+
 
 /*.user-mailbox {
   border: 1px solid black;
