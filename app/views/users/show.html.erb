@@ -1,25 +1,32 @@
 <div class="container">
+  <div class="row">
+    <div class="col s7 push-s5"><span class="flow-text">
+      <p>
+        <br/> <br/>
+        <strong>About me:</strong>
+        <%= @user.about_me %>
+      </p>
+      </span>
+    </div>
 
-  <p>
-    <h4>
-      <%= @user.first_name %>
-      <%= @user.last_name %>
-    </h4>
-  </p>
+    <div class="col s5 pull-s7"><span class="flow-text">
+      <p>
+        <br/>
+        <h4>
+          <%= @user.first_name %>
+          <%= @user.last_name %>
+        </h4>
+      </p>
 
-  <p>
-    <!-- <img src="<%= @user.avatar %>"> -->
-    <%= image_tag @user.avatar.url(:large) %>
-  </p>
+      <p>
+        <!-- <img src="<%= @user.avatar %>"> -->
+        <%= image_tag @user.avatar.url(:large) %>
+      </p>
 
-  <p>
-    <strong>About me:</strong>
-    <%= @user.about_me %>
-  </p>
-
-
-  <%#= link_to 'Edit', edit_user_path(@user) %>
-  <%= link_to "Contact #{@user.first_name}", new_message_path(to: @user), class: "btn-submit waves-effect waves-light btn" %>
-  <%= link_to 'Back', :back, class: "btn-submit waves-effect waves-light btn" %>
-
+      <%#= link_to 'Edit', edit_user_path(@user) %>
+      <%= link_to "Contact #{@user.first_name}", new_message_path(to: @user), class: "btn-submit waves-effect waves-light btn" %>
+      <%= link_to 'Back', :back, class: "btn-submit waves-effect waves-light btn" %>
+      </span>
+    </div>
+  </div>
 </div>

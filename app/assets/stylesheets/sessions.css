@@ -126,6 +126,7 @@ img.convo-header-img {
   border-radius: 50%;
 }
 
+
 p.convo-body {
   font-size: 1.25em;
 }
@@ -136,6 +137,7 @@ p.convo-start-on {
 
 ul.tabs {
   font-size: 1.75em;
+
 }
 
 /*.user-mailbox {
