@@ -102,9 +102,9 @@ nav .brand-logo {
   overflow: hidden;
   float:right;
 }
+
 #map {
   height:100%;
-
 }
 
 .available-housing {
@@ -126,7 +126,6 @@ img.convo-header-img {
   border-radius: 50%;
 }
 
-
 p.convo-body {
   font-size: 1.25em;
 }
@@ -137,7 +136,18 @@ p.convo-start-on {
 
 ul.tabs {
   font-size: 1.75em;
+}
 
+#message_body {
+  height: 10rem;
+}
+
+#body {
+  height: 10rem;
+}
+
+.send_message_to {
+  margin: auto 170px;
 }
 
 /*.user-mailbox {
