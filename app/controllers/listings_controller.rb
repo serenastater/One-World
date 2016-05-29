@@ -8,6 +8,7 @@ class ListingsController < ApplicationController
   def index
     @listings = Listing.all
     # @listing_images = ListingImage.all
+    @letters = ["A","B","C","D","E","F","G","H","I","J","K"] 
   end
 
   # GET /listings/1

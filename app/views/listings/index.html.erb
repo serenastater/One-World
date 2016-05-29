@@ -9,63 +9,64 @@
     var marker = new google.maps.Marker({
       map: map,
       position: {lat:43.666, lng: -79.406},
-      title: 'Hello World1!'
+      label: 'A'
     });
 
     var marker = new google.maps.Marker({
       map: map,
       position: {lat:43.659, lng: -79.412},
-      title: 'Hello World2!'
+      label: 'B'
     });
 
     var marker = new google.maps.Marker({
       map: map,
       position: {lat:43.691, lng: -79.386},
-      title: 'Hello World3!'
+      label: 'C'
     });
 
     var marker = new google.maps.Marker({
       map: map,
       position: {lat:43.665, lng: -79.321},
-      title: 'Hello World4!'
+      label: 'D'
     });
 
     var marker = new google.maps.Marker({
       map: map,
       position: {lat:43.661, lng: -79.383},
-      title: 'Hello World5!'
+      label: 'E'
     });
 
     var marker = new google.maps.Marker({
       map: map,
       position: {lat:43.643, lng: -79.406},
-      title: 'Hello World6!'
+      label: 'F'
     });
 
     var marker = new google.maps.Marker({
       map: map,
       position: {lat:43.644, lng: -79.388},
-      title: 'Hello World7!'
+      label: 'G'
     });
 
     var marker = new google.maps.Marker({
       map: map,
       position: {lat:43.693, lng: -79.330},
-      title: 'Hello World8!'
+      label: 'H'
     });
 
     var marker = new google.maps.Marker({
       map: map,
       position: {lat:43.697, lng: -79.319},
-      title: 'Hello World9!'
+      label: 'I'
     });
 
     var marker = new google.maps.Marker({
       map: map,
       position: {lat:43.659, lng: -79.374},
-      title: 'Hello World10!'
+      label: 'J'
     });
   };
+
   </script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJfi3uDjVfeW050ULZABP2RRV6GyXlLbY&callback=initMap"
   async defer></script>
@@ -79,25 +80,25 @@
   <h2>Available Housing in Toronto</h2>
 
     <div class="row">
-      <% @listings.each do |listing| %>
-      <div class="col s12 m7 l4">
-        <div class="card large">
-          <div class="card-image" id="listings-card">
-            <%= image_tag listing.listing_images.first.picture %>
-          </div>
-          <span class="card-title">
-            <%= listing.headline %>
-          </span>
-          <div class="card-content">
-            <%= listing.description.truncate(80) %>
-          <br>
-            <p> Accommodates: <%= listing.accommodates %> </p>
-          </div>
-          <div class="card-action">
-            <%= link_to 'View Home', listing %>
+      <% @listings.each_with_index do |listing, index| %>
+        <div class="col s12 m7 l4">
+          <div class="card large">
+            <div class="card-image" id="listings-card">
+              <%= image_tag listing.listing_images.first.picture %>
+            </div>
+            <span class="card-title">
+              <%= listing.headline %>
+            </span>
+            <div class="card-content">
+              <%= listing.description.truncate(80) %>
+            <br>
+              <p> Accommodates: <%= listing.accommodates %> </p>
+            </div>
+            <div class="card-action">
+              <%= link_to "#{@letters[index]}: View Home ", listing %>
+            </div>
           </div>
         </div>
-      </div>
       <% end %>
     </div>
 

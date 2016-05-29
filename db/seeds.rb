@@ -176,7 +176,7 @@ ullamcorper. Nulla facilisi. Integer lacinia sollicitudin massa.", accommodates:
 user_id: 6, address_attributes: { street_address: '123 Test Lane', city: 'Toronto',
 country: 'Canada', latitude: 43.643, longitude: -79.406 })
 
-toronto7 = Listing.create(headline: "Bright & clean in midtown", description: "Cras metus. Sed aliquet
+toronto7 = Listing.create(headline: "Room in midtown", description: "Cras metus. Sed aliquet
 risus a tortor. Integer id quam. Morbi mi. Quisque nisl felis, venenatis tristique, dignissim in,
 ultrices sit amet, augue. Proin sodales libero eget ante. Nulla quam. Aenean laoreet. Vestibulum nisi
 lectus, commodo ac, facilisis ac, ultricies eu, pede. Ut orci risus, accumsan porttitor, cursus quis,
