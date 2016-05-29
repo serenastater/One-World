@@ -1,7 +1,7 @@
 <%#= content_tag_for(:li, conversation) do |conversation| %>
 <div class="row">
   <%#= link_to conversation.subject, conversation_path(conversation) %>
-<div class="col s5 push-s7 right-align">
+<div class="col s5 push-s7">
 <% if conversation.is_trashed?(current_user) %>
    <%= link_to 'Restore', restore_conversation_path(conversation), class: "btn-submit waves-effect waves-light btn", method: :post %>
    <% end %>
