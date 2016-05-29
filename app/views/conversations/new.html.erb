@@ -1,6 +1,6 @@
 <div class="container">
 <h1>New Message</h1>
-
+<div class="card-panel">
 <%= form_tag conversations_path, method: :post do %>
  <div class="input-field">
   <%= select_tag 'recipients', options_from_collection_for_select(@recipients, :user_id, :first_name) %>
@@ -16,6 +16,7 @@
 
  <%= submit_tag %>
  <% end %>
+ </div>
 
  <%= link_to 'Home', current_user, class: 'btn-submit' %>
 </div>
