@@ -26,6 +26,7 @@ nav {
 
 footer.page-footer {
   background-color: #212121;
+  z-index: 11;
 }
 
 nav .brand-logo {
@@ -49,7 +50,7 @@ nav .brand-logo {
 .fa {
   -webkit-filter: invert(90%);
   filter: invert(90%);
-  margin: 2px 20px 2px 200px;
+  margin: 2px 20px 2px 175px;
   position: center;
 }
 
@@ -74,7 +75,9 @@ nav .brand-logo {
   background-color: #29b6f6;
 }
 
-#session_password:focus, #session_email:focus {
+#session_password:focus, #session_email:focus, #user_email:focus, #user_password:focus,
+#user_password_confirmation:focus, #user_first_name:focus, #user_last_name:focus,
+#message_subject:focus {
   border-bottom: 1px solid #039be5;
   box-shadow:  0 1px 0 0 #039be5;
 }
@@ -84,6 +87,31 @@ nav .brand-logo {
   height: 75px;
   margin: 5px 5px 2px auto;
   padding: none;
+}
+
+#map-container {
+  width: 30%;
+  height:100%;
+  position:fixed;
+  right:0px;
+  top:0px;
+  bottom:0px;
+  z-index: 10;
+  float: right;
+  overflow: hidden;
+  float:right;
+}
+#map {
+  height:100%;
+
+}
+
+.available-housing {
+  left: 0;
+  bottom: 0;
+  position: relative;
+  width: 70%;
+  /*overflow-y: scroll;*/
 }
 
 
