@@ -1,6 +1,4 @@
 <div class="container">
-  <h2> Navagation</h2>
-
 <section id="content">
   <div id="card-widgets">
     <div class="row">
@@ -24,12 +22,14 @@
           </div>
           <!-- Start User Listing Card -->
           <div class="col s12 m4 l4">
+            <% if current_user.role == "host" %>
             <h4 class="header">Listing Info</h4>
             <div id="dashboard-user-listings-card" class="card">
               <% @listing.each do |list| %>
               <%= link_to 'My Listings', list, class: 'btn-submit' %>
               <% end %>
             </div>
+            <% end %>
           </div>
       </div>
     </div>
