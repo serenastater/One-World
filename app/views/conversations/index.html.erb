@@ -1,20 +1,16 @@
+<script>$(document).ready(function(){
+  $('ul.tabs').tabs();
+});</script>
+
 <div class="container">
 <h1>Messages</h1>
-
+<!-- Mailbox divider line -->
 <div class="divider mailbox-divider"></div>
-
-<div class="row col s12">
-  <div>
-    <i class="fa fa-envelope-o"></i>
-    <%#= link_to 'New Message', new_message_path, class: 'btn-submit' %>
-    <%#= link_to 'Home', '/profile', class: 'btn-submit' %>
-  </div>
-</div>
 <!-- Mailbox tabs -->
 <div class="row card-panel">
   <div class="col s12">
       <ul class="tabs">
-        <li class="tab col s4"><a class=" badge active blue-text" href="#inbox">Inbox <span><%= current_user.mailbox.inbox.count %></span></a></li>
+        <li class="tab col s4"><a class=" badge active blue-text" href="#inbox">Inbox <span class="black-text"><%= current_user.mailbox.inbox.count %></span></a></li>
         <li class="tab col s4"><a class="blue-text" href="#sent">Sent</a></li>
         <li class="tab col s4"><a class="blue-text" href="#trash">Trash</a></li>
         <div class="indicator blue" style="z-index:1"></div>
@@ -29,7 +25,7 @@
   </div>
     <div id="trash" class="col s12">
       <%= render partial: 'conversations/conversation', collection: @trash %>
-      <i class="fa fa-trash"></i><%= link_to 'Empty trash', empty_trash_conversations_path, class: 'btn-flat', method:   :delete, data: {confirm: 'Are you sure?'} %>
+      <%= link_to 'Empty trash', empty_trash_conversations_path, class: "btn-submit waves-effect waves-light btn", method:   :delete, data: {confirm: 'Are you sure?'} %>
     </div>
   </div>
 </div>

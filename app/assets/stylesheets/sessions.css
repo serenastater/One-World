@@ -83,6 +83,7 @@ nav .brand-logo {
 }
 
 #avatar-nav-img {
+  border-radius: 50%;
   width: 75px;
   height: 75px;
   margin: 5px 5px 2px auto;
@@ -113,7 +114,29 @@ nav .brand-logo {
   width: 70%;
   /*overflow-y: scroll;*/
 }
+img.convo-img {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+}
 
+img.convo-header-img {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+}
+
+p.convo-body {
+  font-size: 1.25em;
+}
+
+p.convo-start-on {
+  font-weight: lighter;
+}
+
+ul.tabs {
+  font-size: 1.75em;
+}
 
 /*.user-mailbox {
   border: 1px solid black;
