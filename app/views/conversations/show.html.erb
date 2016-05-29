@@ -19,14 +19,13 @@
             <img class="circle" <%= image_tag message.sender.avatar.url(:icon) %>
             <%= message.sender.first_name %> wrote:
           </div>
-
           <div class="media-body">
             <h6 class="media-heading"></h6>
             <p><%= message.body %></p>
             <%= message.created_at.strftime("%-d %B %Y, %H:%M:%S") %>
           </div>
         </div>
-        <div class="divider"></div>
+      <div class="divider"></div>
       <% end %>
     </div>
   </div>
