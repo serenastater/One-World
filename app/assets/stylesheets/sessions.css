@@ -114,6 +114,9 @@ nav .brand-logo {
   /*overflow-y: scroll;*/
 }
 
+.flow-text {
+  font-size: 1.1em;
+}
 
 /*.user-mailbox {
   border: 1px solid black;
