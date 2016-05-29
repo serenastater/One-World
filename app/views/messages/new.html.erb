@@ -1,5 +1,6 @@
 <div class="container">
 <% page_header "Start Conversation" %>
+<div class="card-panel">
 
   <%= form_tag messages_path, method: :post do %>
   <div class="form-group">
@@ -20,5 +21,6 @@
   <%= submit_tag 'Send', class: 'btn-submit' %>
 
 <% end %>
+</div>
 
 </div>
