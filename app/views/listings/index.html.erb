@@ -2,10 +2,71 @@
     var map;
     function initMap() {
       map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: 43.65, lng: -79.38},
-        zoom: 13
+        center: {lat: 43.666, lng: -79.372},
+        zoom: 12
       });
-    }
+
+    var marker = new google.maps.Marker({
+      map: map,
+      position: {lat:43.666, lng: -79.406},
+      label: 'A'
+    });
+
+    var marker = new google.maps.Marker({
+      map: map,
+      position: {lat:43.659, lng: -79.412},
+      label: 'B'
+    });
+
+    var marker = new google.maps.Marker({
+      map: map,
+      position: {lat:43.691, lng: -79.386},
+      label: 'C'
+    });
+
+    var marker = new google.maps.Marker({
+      map: map,
+      position: {lat:43.665, lng: -79.321},
+      label: 'D'
+    });
+
+    var marker = new google.maps.Marker({
+      map: map,
+      position: {lat:43.661, lng: -79.383},
+      label: 'E'
+    });
+
+    var marker = new google.maps.Marker({
+      map: map,
+      position: {lat:43.643, lng: -79.406},
+      label: 'F'
+    });
+
+    var marker = new google.maps.Marker({
+      map: map,
+      position: {lat:43.644, lng: -79.388},
+      label: 'G'
+    });
+
+    var marker = new google.maps.Marker({
+      map: map,
+      position: {lat:43.693, lng: -79.330},
+      label: 'H'
+    });
+
+    var marker = new google.maps.Marker({
+      map: map,
+      position: {lat:43.697, lng: -79.319},
+      label: 'I'
+    });
+
+    var marker = new google.maps.Marker({
+      map: map,
+      position: {lat:43.659, lng: -79.374},
+      label: 'J'
+    });
+  };
+
   </script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJfi3uDjVfeW050ULZABP2RRV6GyXlLbY&callback=initMap"
   async defer></script>
@@ -16,28 +77,28 @@
 
 
   <div class="available-housing test">
-  <h1>Available Housing</h1>
+  <h2>Available Housing in Toronto</h2>
 
     <div class="row">
-      <% @listings.each do |listing| %>
-      <div class="col s12 m7 l4">
-        <div class="card large">
-          <div class="card-image" id="listings-card">
-            <%= image_tag listing.listing_images.first.picture %>
-          </div>
-          <span class="card-title">
-            <%= listing.headline %>
-          </span>
-          <div class="card-content">
-            <%= listing.description.truncate(80) %>
-          <br>
-            <p> Accommodates: <%= listing.accommodates %> </p>
-          </div>
-          <div class="card-action">
-            <%= link_to 'View Home', listing %>
+      <% @listings.each_with_index do |listing, index| %>
+        <div class="col s12 m7 l4">
+          <div class="card large">
+            <div class="card-image" id="listings-card">
+              <%= image_tag listing.listing_images.first.picture %>
+            </div>
+            <span class="card-title">
+              <%= listing.headline %>
+            </span>
+            <div class="card-content">
+              <%= listing.description.truncate(80) %>
+            <br>
+              <p> Accommodates: <%= listing.accommodates %> </p>
+            </div>
+            <div class="card-action">
+              <%= link_to "#{@letters[index]}: View Home ", listing %>
+            </div>
           </div>
         </div>
-      </div>
       <% end %>
     </div>
 

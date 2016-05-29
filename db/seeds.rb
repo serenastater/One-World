@@ -127,7 +127,8 @@ litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales li
 dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor.
 Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus
 risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet.",
-accommodates: 4, availability: true, user_id: 1, address_attributes: { street_address: '123 Test Lane', city: 'Toronto', country: 'Canada'})
+accommodates: 4, availability: true, user_id: 1, address_attributes: { street_address: '123 Test Lane',
+city: 'Toronto', country: 'Canada', latitude: 43.666, longitude: -79.406  })
 
 toronto2 = Listing.create(headline: "Room for 6", description: "Lorem ipsum dolor sit amet,
 consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.
@@ -137,28 +138,34 @@ ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales
 dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor.
 Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus
 risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet.",
-accommodates: 6, availability: true, user_id: 2, address_attributes: { street_address: '123 Test Lane', city: 'Toronto', country: 'Canada'})
+accommodates: 6, availability: true, user_id: 2, address_attributes: { street_address: '123 Test Lane',
+city: 'Toronto', country: 'Canada', latitude: 43.659, longitude: -79.412 })
 
 toronto3 = Listing.create(headline: "Attached bath", description: "Lorem ipsum dolor
 sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
 Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec
 tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti
 sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in
-libero.", accommodates: 4, availability: true, user_id: 3, address_attributes: { street_address: '123 Test Lane', city: 'Toronto', country: 'Canada'})
+libero.", accommodates: 4, availability: true, user_id: 3, address_attributes: { street_address: '123
+Test Lane', city: 'Toronto', country: 'Canada', latitude: 43.645, longitude: -79.398 })
 
 toronto4 = Listing.create(headline: "24 hour security", description: "Lorem ipsum dolor
 sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus
 diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.
 Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class
 aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur
-sodales ligula in libero.", accommodates: 4, availability: true, user_id: 4, address_attributes: { street_address: '123 Test Lane', city: 'Toronto', country: 'Canada'})
+sodales ligula in libero.", accommodates: 4, availability: true, user_id: 4, address_attributes:
+{ street_address: '123 Test Lane', city: 'Toronto', country: 'Canada', latitude: 43.665,
+longitude: -79.321 })
 
 toronto5 = Listing.create(headline: "Quiet, Clean, and Private", description: "Sed lacinia, urna
 non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi.
 Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien.
 Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer
 euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at
-interdum magna augue eget diam.", accommodates: 6, availability: true, user_id: 5, address_attributes: { street_address: '123 Test Lane', city: 'Toronto', country: 'Canada'})
+interdum magna augue eget diam.", accommodates: 6, availability: true, user_id: 5,
+address_attributes: { street_address: '123 Test Lane', city: 'Toronto',
+country: 'Canada', latitude: 43.662, longitude: -79.383 })
 
 toronto6 = Listing.create(headline: "View on the lake", description: "Vestibulum ante ipsum
 primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent
@@ -166,21 +173,25 @@ blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in
 facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt
 malesuada tellus. Ut ultrices ultrices enim. Curabitur sit amet mauris. Morbi in dui quis est pulvinar
 ullamcorper. Nulla facilisi. Integer lacinia sollicitudin massa.", accommodates: 8, availability: true,
-user_id: 6, address_attributes: { street_address: '123 Test Lane', city: 'Toronto', country: 'Canada'})
+user_id: 6, address_attributes: { street_address: '123 Test Lane', city: 'Toronto',
+country: 'Canada', latitude: 43.643, longitude: -79.406 })
 
-toronto7 = Listing.create(headline: "Bright & clean in midtown", description: "Cras metus. Sed aliquet
+toronto7 = Listing.create(headline: "Room in midtown", description: "Cras metus. Sed aliquet
 risus a tortor. Integer id quam. Morbi mi. Quisque nisl felis, venenatis tristique, dignissim in,
 ultrices sit amet, augue. Proin sodales libero eget ante. Nulla quam. Aenean laoreet. Vestibulum nisi
 lectus, commodo ac, facilisis ac, ultricies eu, pede. Ut orci risus, accumsan porttitor, cursus quis,
 aliquet eget, justo. Sed pretium blandit orci. Ut eu diam at pede suscipit sodales.", accommodates: 2,
-availability: true, user_id: 7, address_attributes: { street_address: '123 Test Lane', city: 'Toronto', country: 'Canada'})
+availability: true, user_id: 7, address_attributes: { street_address: '123 Test Lane',
+city: 'Toronto', country: 'Canada', latitude: 43.644, longitude: -79.388 })
 
 toronto8 = Listing.create(headline: "Steps to the subway", description: "Lorem ipsum dolor
 sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
 Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec
 tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti
 sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in
-libero. Sed dignissim lacinia nunc.", accommodates: 4, availability: true, user_id: 8, address_attributes: { street_address: '123 Test Lane', city: 'Toronto', country: 'Canada'})
+libero. Sed dignissim lacinia nunc.", accommodates: 4, availability: true, user_id: 8,
+address_attributes: { street_address: '123 Test Lane', city: 'Toronto',
+country: 'Canada', latitude: 43.693, longitude: -79.330 })
 
 toronto9 = Listing.create(headline: "Sunny studio", description: "Curabitur tortor.
 Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique
@@ -188,7 +199,8 @@ sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel
 luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus,
 ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent
 taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante.",
-accommodates: 2, availability: true, user_id: 9, address_attributes: { street_address: '123 Test Lane', city: 'Toronto', country: 'Canada'})
+accommodates: 2, availability: true, user_id: 9, address_attributes: { street_address: '123 Test Lane',
+city: 'Toronto', country: 'Canada', latitude: 43.697, longitude: -79.319 })
 
 toronto10 = Listing.create(headline: "Downtown family home", description: "Etiam
 ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna.
@@ -196,7 +208,8 @@ Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum m
 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia
 molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi
 in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue.",
-accommodates: 6, availability: true, user_id: 10, address_attributes: { street_address: '123 Test Lane', city: 'Toronto', country: 'Canada'})
+accommodates: 6, availability: true, user_id: 10, address_attributes:
+{ street_address: '123 Test Lane', city: 'Toronto', country: 'Canada', latitude: 43.659, longitude: -79.374 })
 
 x = 1
 9.times do
