@@ -1,45 +1,44 @@
 <div class="container">
-<section id="content">
-  <div id="card-widgets">
-    <div class="row">
-      <div class="col s12 m4 l4">
+  <div class="row">
+    <div class="col s5 pull-s7">
+      <span class="flow-text">
         <h4 class="header">Profile</h4>
-          <div id="profile-card" class="card">
-            <div class="card-image">
-              <img <%= image_tag current_user.avatar.url(:large) %>
-              <span class="card-title white-text darken-4"><%= current_user.first_name %></span>
-            </div>
-              <p>
-                <i class="material-icons">perm_identity</i>
-                <%= current_user.role.capitalize %>
-              </p>
-              <p>
-                <i class="material-icons">email</i>
-                <%= current_user.email %>
-                <a href="<%= edit_user_path(current_user) %>" class="secondary-content"><i class="material-icons">edit</i></a>
-              </p>
-            </div>
+        <div id="profile-card" class="card">
+          <div class="card-image">
+            <img <%= image_tag current_user.avatar.url(:large) %>
+            <span class="card-title white-text darken-4", style="font-family: Ruda"><%= current_user.first_name %></span>
           </div>
-          <!-- Start User Listing Card -->
-          <div class="col s12 m4 l4">
-            <% if current_user.role == "host" %>
-            <h4 class="header">Listing Info</h4>
-            <div id="dashboard-user-listings-card" class="card">
-              <% @listing.each do |list| %>
-              <%= link_to 'My Listings', list, class: 'btn-submit' %>
-              <% end %>
-            </div>
-            <% end %>
-          </div>
-      </div>
+            <p>
+              <i class="material-icons">perm_identity</i>
+              <%= current_user.role.capitalize %>
+            </p>
+            <p>
+              <i class="material-icons">email</i>
+              <%= current_user.email %>
+              <a href="<%= edit_user_path(current_user) %>" class="secondary-content"><i class="material-icons">edit</i></a>
+            </p>
+        </div>
+      </span>
+    </div>
+    <div class="col s7 push-s5">
+      <span class="flow-text">
+        <div class="card-panel">
+          <%= current_user.about_me %>
+        </div>
+      </span>
     </div>
   </div>
-</section>
-  <div>
-
-  <div class="card-panel">
-      <%= current_user.about_me %>
+  <div class="row">
+    <!-- Start User Listing Card -->
+    <div class="col s7 push-s5"><span class="flow-text">
+      <% if current_user.role == "host" %>
+        <h4 class="header">Listing Info</h4>
+        <div id="dashboard-user-listings-card" class="card">
+          <% @listing.each do |list| %>
+          <%= link_to 'My Listings', list, class: 'btn-submit' %>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
   </div>
-  </div>
-</div>
 </div>
