@@ -15,8 +15,8 @@ $(document).ready(function(){
     </a>
   <% end %>
 </div>
-
 <div class="container">
+  <div class="card-panel">
  <div class="row">
    <div class="col s6">
      <h4>
@@ -29,26 +29,24 @@ $(document).ready(function(){
      <h5>
        <strong>Hosted by:</strong>
        <%= link_to @listing.user.first_name, user_path(@listing.user_id)%>
-       <!-- <img class="circle" <%#= image_tag @listing.user.avatar.url(:icon) %> -->
      </h5>
+     <div class="divider show-user-div"></div>
+     <br></br>
+     <div>
+       <%= link_to "Contact #{@listing.user.first_name}", new_message_path(to: @listing.user.id), class: "btn-submit waves-effect waves-light btn" %>
+       <% if current_user.role == 'Host' %>
+          <p class="listing-edit">
+            <%= link_to "Edit Listing", edit_listing_path(@listing.id), class: "btn-submit waves-effect waves-light btn" %> |
+          </p>
+        <% end %>
+        <%= link_to 'Back', listings_path, class: "btn-submit waves-effect waves-light btn" %>
+      </div>
    </div>
-
    <div class="col s6">
      <p>
        <%= @listing.description %>
      </p>
    </div>
  </div>
-
- <div>
-   <%= link_to "Contact #{@listing.user.first_name}", new_message_path(to: @listing.user.id), class: "btn-submit waves-effect waves-light btn" %>
-
-   <% if current_user.role == 'Host' %>
-      <p class="listing-edit">
-        <%= link_to "Edit Listing", edit_listing_path(@listing.id), class: "btn-submit waves-effect waves-light btn" %> |
-      </p>
-    <% end %>
-    <%= link_to 'Back', listings_path, class: "btn-submit waves-effect waves-light btn" %>
-
   </div>
 </div>
