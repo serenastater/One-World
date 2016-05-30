@@ -24,10 +24,6 @@
     <%= f.text_field :email %>
   </div>
   <div class="field">
-    <%= f.label :password_digest %><br>
-    <%= f.text_field :password_digest %>
-  </div>
-  <div class="field">
     <%= f.label :avatar %><br>
     <%= f.file_field :avatar %>
   </div>
@@ -44,7 +40,6 @@
     <%= f.number_field :num_members %>
   </div>
   <div class="actions">
-    <%#= submit_tag 'Send', class: 'btn-submit' %>
-    <%= f.submit %>
+    <a class="waves-effect waves-light btn"><%= f.submit %></a>
   </div>
 <% end %>

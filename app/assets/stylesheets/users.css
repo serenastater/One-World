@@ -1,3 +1,7 @@
 .flow-text {
   font-size: 1.1em;
 }
+
+#user_about_me {
+  height: 8em;
+}
