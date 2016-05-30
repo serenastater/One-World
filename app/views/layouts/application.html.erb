@@ -39,8 +39,12 @@
           <img src="http://i.imgur.com/uV76U4O.png" id="logo-icon">
           <!-- <i class="fa fa-globe" aria-hidden="true"></i> -->
           <a href="/login" class="brand-logo">ONE World</a>
-
           <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script></li>
             <% if current_user %>
             <li id="avatar-nav-img"><a href="<%= '/profile' %>"> <img src="<%= current_user.avatar %>" alt="" class="circle responsive-img"></a></li>
             <li>Welcome, <%= current_user.first_name.capitalize %>!</li>
@@ -49,7 +53,6 @@
             <% end %>
           </ul>
         </div>
-
       </div>
 
    </div>

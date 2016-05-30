@@ -124,6 +124,11 @@ img.convo-header-img {
   height: 45px;
   width: 45px;
   border-radius: 50%;
+  margin-left: 15px;
+}
+
+div.convo-time-info {
+  font-size: .75em;
 }
 
 p.convo-body {

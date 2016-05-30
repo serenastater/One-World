@@ -2,15 +2,15 @@
 
 <br/><br/>
 <div class="card-panel">
-  <div class="panel-heading center-align">
-  <h5>Chatting with</h5>
-  <h5><%= render 'conversations/participants', conversation: @conversation %></h5>
+  <div class="card-panel grey lighten-2 panel-heading center-align">
+  <h5>Chatting with <%= render 'conversations/participants', conversation: @conversation %></h5>
 </div>
 <div class="panel panel-default">
 <div class="divider"></div>
   <div class="panel-body">
     <div class="messages">
       <% @conversation.receipts_for(current_user).each do |receipt| %>
+      <br/><br/>
         <div class="media">
           <% message = receipt.message %>
           <div class="media-left">
@@ -19,7 +19,7 @@
           </div>
           <div class="media-body">
             <p class="convo-body center-align"><%= message.body %></p>
-            <p class="convo-start-on right-align"><%= message.created_at.strftime("%B %-d %Y") %></p>
+            <p class="convo-start-on right-align grey-text"><%= message.created_at.strftime("%B %-d %Y") %></p>
           </div>
         </div>
       <div class="divider"></div>
