@@ -3,15 +3,15 @@
   <div id="card-widgets">
     <div class="row">
       <div class="col s12 m4 l4">
-        <h4 class="header">Profile Info</h4>
+        <h4 class="header">Profile</h4>
           <div id="profile-card" class="card">
             <div class="card-image">
               <img <%= image_tag current_user.avatar.url(:large) %>
-              <span class="card-title grey-text darken-4"><%= current_user.first_name %></span>
+              <span class="card-title white-text darken-4"><%= current_user.first_name %></span>
             </div>
               <p>
                 <i class="material-icons">perm_identity</i>
-                <%= current_user.role %>
+                <%= current_user.role.capitalize %>
               </p>
               <p>
                 <i class="material-icons">email</i>
@@ -36,10 +36,10 @@
   </div>
 </section>
   <div>
-    <ul>
-      <li><%#= image_tag current_user.avatar %></li>
-      <li><%= current_user.about_me %></li>
-    </ul>
+
+  <div class="card-panel">
+      <%= current_user.about_me %>
+  </div>
   </div>
 </div>
 </div>

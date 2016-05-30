@@ -150,6 +150,9 @@ ul.tabs {
   margin: auto 170px;
 }
 
+.secondary-content {
+  color: #039be5;
+}
 /*.user-mailbox {
   border: 1px solid black;
   background-color: white;
