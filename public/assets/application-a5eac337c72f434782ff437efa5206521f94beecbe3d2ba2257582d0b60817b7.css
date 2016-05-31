@@ -1,0 +1,282 @@
+
+h1 {
+  text-align: center;
+  font-family: Ruda;
+}
+
+h2 {
+  text-align: center;
+}
+
+a href {
+  font-color: black;
+}
+
+card-title a {
+  font-color:black;
+}
+
+#card-reveal-title {
+  font-size: 1.5em;
+  font-family: Frijole;
+}
+
+.cities-page-line {
+  background-color: #424242;
+}
+
+.card-reveal {
+  font-size: 1.5em;
+}
+
+.carousel-item {
+  width: 50% !important;
+  height: 100% !important;
+}
+
+.carousel {
+  margin: 5em auto;
+}
+
+h3 {
+  margin: auto;
+}
+
+#map {
+  margin: 1em auto;
+  height: 300px;
+  width: 100%;
+  position: fixed;
+  order: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+    font-family: Ruda;
+    background-color: #e1f5fe;
+  }
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.nav-wrapper {
+  font-family: Ruda;
+}
+
+nav {
+  background-color: #212121;
+}
+
+footer.page-footer {
+  background-color: #212121;
+  z-index: 11;
+}
+
+nav .brand-logo {
+  font-family: Frijole;
+  font-size: 2.5rem;
+}
+
+#logo-icon {
+  width: 45px;
+  height: 45px;
+  color: white;
+  margin: 9px 12px 5px 10px;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+#footer-copyright {
+  background-color: #424242;
+}
+/* FONT AWESOME ICONS IN FOOTER */
+.fa {
+  -webkit-filter: invert(90%);
+  filter: invert(90%);
+  margin: 2px 20px 2px 175px;
+  position: center;
+}
+
+.white-text {
+  font-family: Frijole;
+  font-weight: lighter;
+}
+
+/*.tabs .tab.messages-tab a {
+  color: #039be5;
+}*/
+
+.banner {
+  margin: 1em 0;
+  width: 100%;
+}
+
+.btn {
+  background-color: #039be5;
+}
+.btn:hover {
+  background-color: #29b6f6;
+}
+
+#session_password:focus, #session_email:focus, #user_email:focus, #user_password:focus,
+#user_password_confirmation:focus, #user_first_name:focus, #user_last_name:focus,
+#message_subject:focus {
+  border-bottom: 1px solid #039be5;
+  box-shadow:  0 1px 0 0 #039be5;
+}
+
+#avatar-nav-img {
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  margin: 5px 5px 2px auto;
+  padding: none;
+}
+
+#map-container {
+  width: 30%;
+  height:100%;
+  position:fixed;
+  right:0px;
+  top:0px;
+  bottom:0px;
+  z-index: 10;
+  float: right;
+  overflow: hidden;
+  float:right;
+}
+
+#map {
+  height:100%;
+}
+
+.available-housing {
+  left: 0;
+  bottom: 0;
+  position: relative;
+  width: 70%;
+  /*overflow-y: scroll;*/
+}
+img.convo-img {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+}
+
+img.convo-header-img {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  margin-left: 15px;
+}
+
+div.convo-time-info {
+  font-size: .75em;
+}
+
+p.convo-body {
+  font-size: 1.25em;
+}
+
+p.convo-start-on {
+  font-weight: lighter;
+}
+
+ul.tabs {
+  font-size: 1.75em;
+}
+
+#message_body {
+  height: 10rem;
+}
+
+#body {
+  height: 10rem;
+}
+
+.send_message_to {
+  margin: auto 170px;
+}
+
+.secondary-content {
+  color: #039be5;
+}
+/*.user-mailbox {
+  border: 1px solid black;
+  background-color: white;
+}*/
+/* --- DON'T DELETE -- */
+/*.grid {
+  position: relative;
+  background: #EEE;
+  width:100%;
+  margin: 0.5em 0em 2em 0em;
+}*/
+
+/* clearfix */
+/*.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}*/
+
+/* ---- grid-item ---- */
+
+/*.grid-sizer,
+.grid-item {
+  width: 20%;
+}*/
+
+/*.grid-item {
+  height: 200px;
+  float: left;
+}
+
+.grid-item--width2 { width:  60%; }
+.grid-item--width3 { width:  60%; }
+
+.grid-item--height2 { height: 200px; }
+.grid-item--height3 { height: 260px; }
+.grid-item--height4 { height: 360px; }*/
+
+/*img.home {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}*/
+.flow-text {
+  font-size: 1.1em;
+}
+
+#user_about_me {
+  height: 8em;
+}
+
+.show-user-div {
+  margin-top: 45px;
+  height: 2px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+@import 'chosen';
