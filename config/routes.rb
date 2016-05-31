@@ -23,7 +23,7 @@ Rails.application.routes.draw do
   get 'signup' => 'users#new'
   get '/login' => 'sessions#new'
   post 'login' => 'sessions#create'
-  get 'logout' => 'sessions#destroy'
+  post 'logout' => 'sessions#destroy'
   get 'cities' => 'cities#index'
   get '/profile' => 'dashboard#index'
   patch 'users/:id', to: 'users#update'
