@@ -28,11 +28,15 @@ class UsersController < ApplicationController
   @user = User.new(user_params)
   if @user.save
     session[:user_id] = @user.id
-    redirect_to '/cities'
+    unless @user.role == "host"
+      redirect_to '/cities'
+    else
+      redirect_to '/profile'
+    end
   else
-    redirect_to '/signup'
+    redirect_to 'signup'
   end
-  end
+end
 
   # PATCH/PUT /users/1
   # PATCH/PUT /users/1.json
