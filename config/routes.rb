@@ -9,7 +9,6 @@ Rails.application.routes.draw do
       post :reply
       post :restore
       get :mark_as_read
-      get :move_to_trash
     end
     collection do
       delete :empty_trash

@@ -15,11 +15,11 @@
 //= require chosen-jquery
 //= require jquery.turbolinks
 $(document).ready(function(){
-     $('.carousel').carousel(
+     $('.carousel').carousel({
        dist:0,
        shift:0,
        padding:20,
-     );
+     });
    });
 
 $(document).ready(function() {

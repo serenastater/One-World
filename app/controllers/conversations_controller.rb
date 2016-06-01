@@ -6,17 +6,17 @@ class ConversationsController < ApplicationController
   # helper_method :mailbox, :conversation
 
   def index
-    @conversations = @mailbox.inbox
-        @inbox = @mailbox.inbox
-        @trash = @mailbox.trash
-        @sent = @mailbox.sentbox
-    # if @box.eql? "inbox"
-    #   @conversations = @mailbox.inbox
-    # elsif @box.eql? "sent"
-    #   @conversations = @mailbox.sentbox
-    # else
-    #   @conversations = @mailbox.trash
-    # end
+    # @conversations = @mailbox.inbox
+        # @inbox = @mailbox.inbox
+        # @trash = @mailbox.trash
+        # @sent = @mailbox.sentbox
+    if @box.eql? "inbox"
+      @conversations = @mailbox.inbox
+    elsif @box.eql? "sent"
+      @conversations = @mailbox.sentbox
+    else
+      @conversations = @mailbox.trash
+    end
   end
 
   def show
@@ -50,6 +50,13 @@ class ConversationsController < ApplicationController
     end
     redirect_to conversations_path
   end
+
+# test code - didnt work
+#   def trash_conversations
+#   # params[:conversations] is an array of conversation IDs
+#   Mailboxer::Conversation.find(params[:conversations]).each |conversation|
+#     conversation.move_to_trash(current_user)
+# end
 
   private
 

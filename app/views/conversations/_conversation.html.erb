@@ -1,24 +1,28 @@
 <br></br>
-  <div class="card-panel grey lighten-2">
-    <div class="row">
+<div class="card-panel grey lighten-2">
+  <div class="row">
     <div class="col s3 push-s9">
+      <!-- return conversation to inbox button -->
       <% if conversation.is_trashed?(current_user) %>
-      <%= link_to 'Restore', restore_conversation_path(conversation), class: "btn-submit waves-effect waves-light btn", method: :post %>
+        <%= link_to 'Restore', restore_conversation_path(conversation), class: "btn-submit waves-effect waves-light btn", method: :post %>
       <% end %>
+      <!-- move conversation to trash button -->
         <% if conversation.is_read?(current_user) %>
-        <%= link_to 'Move to trash', conversation_path(conversation), class: "btn-submit waves-effect waves-light btn", method: :delete, data: {confirm: 'Are you sure?'} %>
+          <%= form_tag(conversation_path(conversation), method: :delete) do %>
+            <%= submit_tag('Move to trash', class: "btn-submit waves-effect waves-light btn") %>
+          <% end %>
         <% end %>
-
+        <!-- mark conversation as read button -->
           <% if conversation.is_unread?(current_user) %>
-          <%= link_to 'Mark as read', mark_as_read_conversation_path(conversation), class: "btn-submit waves-effect waves-light btn", method: :post %>
+            <%= link_to 'Mark as read', mark_as_read_conversation_path(conversation), class: "btn-submit waves-effect waves-light btn", method: :post %>
           <% end %>
     </div>
+    <!-- conversation details and contents -->
     <div class="col s9 pull-s3">
       <%= link_to conversation.subject, conversation_path(conversation) %>
       <%= render 'conversations/participants', conversation: conversation %>
-
-      <div class="convo-body"><%= conversation.last_message.body %></div>
-      <div class="convo-time-info grey-text"><%= conversation.last_message.created_at.strftime("%B %-d %Y, %l:%M%p") %></div>
+        <div class="convo-body"><%= conversation.last_message.body %></div>
+        <div class="convo-time-info grey-text"><%= conversation.last_message.created_at.strftime("%B %-d %Y, %l:%M%p") %></div>
     </div>
   </div>
 </div>

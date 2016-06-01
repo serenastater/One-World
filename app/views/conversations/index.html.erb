@@ -5,26 +5,26 @@
 <div class="container">
 <h1>Messages</h1>
 <!-- Mailbox divider line -->
-<div class="divider mailbox-divider"></div>
-<!-- Mailbox tabs -->
-<div class="row card-panel">
-  <div class="col s12">
+  <div class="divider mailbox-divider"></div>
+<!-- Mailbox navigation tabs -->
+  <div class="row card-panel">
+    <div class="col s12">
       <ul class="tabs">
         <li class="tab col s4"><a class=" badge active blue-text" href="#inbox">Inbox <span class="black-text"><%= current_user.mailbox.inbox.count %></span></a></li>
         <li class="tab col s4"><a class="blue-text" href="#sent">Sent</a></li>
         <li class="tab col s4"><a class="blue-text" href="#trash">Trash</a></li>
         <div class="indicator blue" style="z-index:1"></div>
       </ul>
-</div>
+    </div>
 <!-- Mailbox tab views -->
-<div id="inbox" class="col s12">
-  <%= render partial: 'conversations/conversation', collection: @inbox %>
-</div>
-  <div id="sent" class="col s12">
-    <%= render partial: 'conversations/conversation', collection: @sent %>
-  </div>
+    <div id="inbox" class="col s12">
+      <%= render partial: 'conversations/conversation', collection: @mailbox.inbox %>
+    </div>
+    <div id="sent" class="col s12">
+      <%= render partial: 'conversations/conversation', collection: @mailbox.sentbox %>
+    </div>
     <div id="trash" class="col s12">
-      <%= render partial: 'conversations/conversation', collection: @trash %>
+      <%= render partial: 'conversations/conversation', collection: @mailbox.trash %>
       <%= link_to 'Empty trash', empty_trash_conversations_path, class: "btn-submit waves-effect waves-light btn", method:   :delete, data: {confirm: 'Are you sure?'} %>
     </div>
   </div>
