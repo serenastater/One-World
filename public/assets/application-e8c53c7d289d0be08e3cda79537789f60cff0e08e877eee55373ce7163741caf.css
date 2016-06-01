@@ -1,3 +1,54 @@
+
+h1 {
+  text-align: center;
+  font-family: Ruda;
+}
+
+h2 {
+  text-align: center;
+}
+
+a href {
+  font-color: black;
+}
+
+card-title a {
+  font-color:black;
+}
+
+#card-reveal-title {
+  font-size: 1.5em;
+  font-family: Frijole;
+}
+
+.cities-page-line {
+  background-color: #424242;
+}
+
+.card-reveal {
+  font-size: 1.5em;
+}
+
+.carousel-item {
+  width: 50% !important;
+  height: 100% !important;
+}
+
+.carousel {
+  margin: 5em auto;
+}
+
+h3 {
+  margin: auto;
+}
+
+#map {
+  margin: 1em auto;
+  height: 300px;
+  width: 100%;
+  position: fixed;
+  order: 0;
+}
 * {
   box-sizing: border-box;
 }
@@ -200,3 +251,32 @@ ul.tabs {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }*/
+.flow-text {
+  font-size: 1.1em;
+}
+
+#user_about_me {
+  height: 8em;
+}
+
+.show-user-div {
+  margin-top: 45px;
+  height: 2px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+@import 'chosen';
