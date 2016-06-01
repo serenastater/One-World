@@ -28,7 +28,7 @@ class UsersController < ApplicationController
   @user = User.new(user_params)
   if @user.save
     session[:user_id] = @user.id
-    unless @user.role == "host"
+    unless @user.role == "Host"
       redirect_to '/cities'
     else
       redirect_to '/profile'
