@@ -1,7 +1,15 @@
 == ONE World
 
->According to the United Nations, there are currently 20 million refugees worldwide. Over half of these people are under the age of 18. 
+## Problem
 
-Most refugees are living in unsafe conditions in camps or on the streets.
+According to the United Nations, there are currently 20 million refugees worldwide. Over half of these people are under the age of 18. 
+
+Most refugees are living in unsafe conditions in camps or on the streets. One World aims to help solve this problem and to povide relief to governments and NGOs.
+
+## Solution
+
+One World consists of a network of hosts who are willing to take refugee families into their homes, on a temporary basis, while they wait for permanent placement. Think "Airbnb" for refugees. 
+
+To 
 
 
