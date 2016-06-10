@@ -1,28 +1,15 @@
-== ONE World
+== ONE World was developed by Timothy Ingram and Serena Stater for our final project at Wyncode Academy.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Our backend was constructed with ruby on rails and our front end utilizes Materialize and Javascript.
 
-Things you may want to cover:
+Gems include the following:
 
-* Ruby version
+gem 'mailboxer', github: 'mailboxer/mailboxer' - for our messaging system
 
-* System dependencies
+gem 'pg', '~> 0.15' - postgresql for our database
 
-* Configuration
+gem 'paperclip', git: "git://github.com/thoughtbot/paperclip.git" - paperclip for file uploading
 
-* Database creation
+Our goal was to create a user friendly resource to help alleviate the refugee crisis. One World connects refugees with host families that are willing to help relocate them.
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+> According to the United Nations, there are currently 20 million refugees worldwide. Over half of these people are under the age of 18.
