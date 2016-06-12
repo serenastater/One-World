@@ -2,6 +2,8 @@
 
 ##### Created by [Serena Stater](https://www.linkedin.com/in/serena-stater-912115111) and [Timothy Ingram](https://www.linkedin.com/in/timothy-ingram-40366852)
 
+
+
 ### The Problem
 
 According to the United Nations, there are currently 20 million refugees worldwide. Over half of these people are under the age of 18. Many of them are living in unsafe conditions in camps or on the streets.
@@ -67,4 +69,5 @@ If you would like to login as a host, you may log in as any host you find on the
 - Email: "host_first_name"@email.com
 - Password: 1234asdf
 
-
+View a screen recording of logging in as a [refugee](https://www.youtube.com/watch?v=BmFIQASY51E)
+View a screen recording of loggin in as a [host](https://youtu.be/OcIsvix78nk)
