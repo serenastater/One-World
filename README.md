@@ -45,4 +45,9 @@ ONE World consists of a network of hosts who are willing to take refugee familie
  ```
  git clone https://github.com/serenastater/One-World.git
  ```
+ Then:
+ ```
+ bundle install
+ ```
+ 
 
