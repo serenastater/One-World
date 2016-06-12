@@ -42,5 +42,7 @@ ONE World consists of a network of hosts who are willing to take refugee familie
 # Setup Instructions
  
  Using your local terminal, clone the repo:
- 'git clone https://github.com/serenastater/One-World.git'
+ ```
+ git clone https://github.com/serenastater/One-World.git
+ ```
 
