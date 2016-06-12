@@ -2,9 +2,9 @@
 
 ##### Created by [Serena Stater](https://www.linkedin.com/in/serena-stater-912115111) and [Timothy Ingram](https://www.linkedin.com/in/timothy-ingram-40366852)
 
-## Problem
+### The Problem
 
-According to the United Nations, there are currently 20 million refugees worldwide. Over half of these people are under the age of 18.
+> According to the United Nations, there are currently 20 million refugees worldwide. Over half of these people are under the age of 18.
 
 Most refugees are living in unsafe conditions in camps or on the streets. One World aims to help solve this problem and to povide relief to governments and NGOs.
 
