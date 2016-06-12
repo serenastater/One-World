@@ -14,11 +14,11 @@ ONE World consists of a network of hosts who are willing to take refugee familie
 
 #### User Story 1:
 
-> As a host, I would like to provide shelter to refugees in need so that families don't have to live in unsafe conditions.
+> "As a host, I would like to provide shelter to refugees in need so that families don't have to live in unsafe conditions."
 
 #### User Story 2:
 
-> As a refugee, I would like to find safe housing so that my family has a stable home environment.
+> "As a refugee, I would like to find safe housing so that my family has a stable home environment."
 
 
 
