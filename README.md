@@ -39,3 +39,8 @@ ONE World consists of a network of hosts who are willing to take refugee familie
 - [Paperclip](https://github.com/thoughtbot/paperclip) for file uploading
 - [Bcrypt](https://github.com/codahale/bcrypt-ruby) for securing user passwords
 
+# Setup Instructions
+ 
+ Using your local terminal, clone the repo:
+ 'git clone 
+
