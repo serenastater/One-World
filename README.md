@@ -20,21 +20,22 @@ ONE World consists of a network of hosts who are willing to take refugee familie
 
 > "As a refugee, I would like to find safe housing so that my family has a stable home environment."
 
-### ONE World's Tech Stack
+### Tech Stack
 
 ##### Back End: 
 
-Ruby on Rails, Postgres 
+- Ruby on Rails
+- Postgres 
 
 ##### Front End:
 
-Materialize, Javascript, jQuery
+- Materialize
+- Javascript
+- jQuery
 
 ##### Ruby Gems:
 
-[Mailboxer](https://github.com/mailboxer/mailboxer) for the messaging system
-
-[Paperclip](https://github.com/thoughtbot/paperclip) for file uploading
-
-[Bcrypt](https://github.com/codahale/bcrypt-ruby) for securing user passwords
+- [Mailboxer](https://github.com/mailboxer/mailboxer) for the messaging system
+- [Paperclip](https://github.com/thoughtbot/paperclip) for file uploading
+- [Bcrypt](https://github.com/codahale/bcrypt-ruby) for securing user passwords
 
