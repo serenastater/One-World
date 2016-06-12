@@ -4,15 +4,15 @@
 
 ### The Problem
 
-> According to the United Nations, there are currently 20 million refugees worldwide. Over half of these people are under the age of 18.
+According to the United Nations, there are currently 20 million refugees worldwide. Over half of these people are under the age of 18. Many of them are living in unsafe conditions in camps or on the streets.
 
-Most refugees are living in unsafe conditions in camps or on the streets. One World aims to help solve this problem and to povide relief to governments and NGOs.
+### The Solution
 
-## Solution
+ONE World aims to help solve this problem and to povide relief to governments and NGOs whose resources are stretched far too thin.
 
-One World consists of a network of hosts who are willing to take refugee families into their homes, on a temporary basis, while they wait for permanent placement. Think "Airbnb" for refugees.
+ONE World consists of a network of hosts who are willing to take refugee families into their homes, on a temporary basis, while they wait for permanent placement. Think "Airbnb" for refugees.
 
-To
+
 
 
 Our backend was constructed with ruby on rails and our front end utilizes Materialize and Javascript.
