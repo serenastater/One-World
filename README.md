@@ -1,5 +1,5 @@
 # ONE World
-----------
+
  Created by [Serena Stater](https://www.linkedin.com/in/serena-stater-912115111) and [Timothy Ingram](https://www.linkedin.com/in/timothy-ingram-40366852)
  ----
 
