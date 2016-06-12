@@ -12,6 +12,14 @@ ONE World aims to help solve this problem and to povide relief to governments an
 
 ONE World consists of a network of hosts who are willing to take refugee families into their homes, on a temporary basis, while they wait for permanent placement. Think "Airbnb" for refugees.
 
+#### User Story 1:
+
+> As a host, I would like to provide shelter to refugees in need so that families don't have to live in unsafe conditions.
+
+#### User Story 2:
+
+> As a refugee, I would like to find safe housing so that my family has a stable home environment.
+
 
 
 
