@@ -57,4 +57,14 @@ ONE World consists of a network of hosts who are willing to take refugee familie
  ```
  rake db:seed
  ```
+You must login to view the app. We suggest first logging in as a refugee. Use this example:
+- Email: sherihan@email.com
+- Password: 1234asdf
+
+You will then be directed to a page that lists the cities within which ONE World has a current network. Please note that at this time, only listings for Toronto are seeded to the database. Click Toronto to view individual listings.
+
+If you would like to login as a host, you may log in as any host you find on the listings page for Toronto. The login credentials for a host are simple. Remember to use all lowercase characters:
+- Email: "host_first_name"@email.com
+- Password: 1234asdf
+
 
