@@ -49,5 +49,12 @@ ONE World consists of a network of hosts who are willing to take refugee familie
  ```
  bundle install
  ```
- 
+ Don't forget to:
+ ```
+ rake db:migrate
+ ```
+ Finally, you must seed your database:
+ ```
+ rake db:seed
+ ```
 
