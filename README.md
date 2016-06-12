@@ -69,9 +69,13 @@ If you would like to login as a host, you may log in as any host you find on the
 - Email: "host_first_name"@email.com
 - Password: 1234asdf
 
+View a demo of logging in as a refugee:
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=BmFIQASY51E
 " target="_blank"><img src="http://img.youtube.com/vi/BmFIQASY51E/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+alt="REFUGEE LOGIN" width="260" height="200" border="10" /></a>
 
-View a screen recording of logging in as a [refugee](https://www.youtube.com/watch?v=BmFIQASY51E)  
-View a screen recording of logging in as a [host](https://www.youtube.com/watch?v=BmFIQASY51E)
+View a demo of logging in as a host:
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=OcIsvix78nk
+" target="_blank"><img src="http://img.youtube.com/vi/OcIsvix78nk/0.jpg" 
+alt="HOST LOGIN" width="260" height="200" border="10" /></a>
+
