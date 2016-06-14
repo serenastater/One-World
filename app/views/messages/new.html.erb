@@ -1,7 +1,7 @@
 <div class="container">
   <br/> <br/>
   <div class="send_message_to">
-    <h3> Send Message to <%= @chosen_recipient.first_name %> </h3>
+    <!-- <h3> Send Message to <%= @chosen_recipient.first_name %> </h3> -->
   </div>
   <br/>
   <div class="card-panel">
@@ -20,7 +20,7 @@
 
     <div class="form-group">
       <%#= label_tag 'recipients', 'Choose recipients' %>
-      <%= select_tag 'recipients', recipients_options(@chosen_recipient), multiple: true, class: 'form-control chosen-it' %>
+      <%#= select_tag 'recipients', recipients_options(@chosen_recipient), multiple: true, class: 'form-control chosen-it' %>
     </div>
 
     <%= submit_tag 'Send', class: "btn-submit waves-effect waves-light btn"  %>
