@@ -34,7 +34,7 @@ gem 'paperclip', git: "git://github.com/thoughtbot/paperclip.git"
 gem 'will_paginate'
 gem 'chosen-rails'
 # communicates with Amazon Web Services for image management
-gem 'aws-sdk', '~> 2'
+gem 'aws-sdk', '~> 2.3'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
